@@ -4,10 +4,12 @@ CONFIG += c++2a \
 
 QT += quick
 
-PRECOMPILED_HEADER = pch.hpp
+PRECOMPILED_HEADER = pch.h
 
-HEADERS += pch.hpp
+HEADERS += pch.h \
+           Huppy.h
 
-SOURCES += Main.cpp
+SOURCES += Main.cpp \
+           Huppy.cpp
 
 RESOURCES += Resources.qrc

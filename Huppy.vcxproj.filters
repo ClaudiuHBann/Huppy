@@ -5,22 +5,9 @@
       <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
     </Filter>
-    <Filter Include="Generated Files">
-      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
-    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
-      <Extensions>qrc;*</Extensions>
-      <ParseFiles>false</ParseFiles>
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
@@ -31,56 +18,35 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="debug\Main_qml.cpp" />
+    <CustomBuild Include="debug\moc_predefs.h.cbt" />
+    <ClCompile Include="debug\qmlcache_loader.cpp" />
+    <ClCompile Include="Huppy.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="pch.hpp">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
+    <QtRcc Include="Resources_qmlcache.qrc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="debug\Main_qml.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="release\Main_qml.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <CustomBuild Include="debug\moc_predefs.h.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="release\moc_predefs.h.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
-    <ClCompile Include="pch.hpp.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="debug\qmlcache_loader.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="release\qmlcache_loader.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <CustomBuild Include="debug\qmlcache_loader.cpp.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
+    <CustomBuild Include="Main.qml" />
+    <CustomBuild Include="release\qmlcache_loader.cpp.cbt" />
+    <CustomBuild Include="release\moc_predefs.h.cbt" />
+    <CustomBuild Include="debug\qmlcache_loader.cpp.cbt" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Main.qml">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <QtRcc Include="Resources_qmlcache.qrc">
-      <Filter>Resource Files</Filter>
-    </QtRcc>
+    <ClCompile Include="release\Main_qml.cpp" />
+    <ClCompile Include="release\qmlcache_loader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Huppy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Huppy.pro" />
+    <None Include="README.md" />
+    <None Include=".gitignore" />
+    <None Include=".gitattributes" />
   </ItemGroup>
 </Project>

@@ -1,11 +1,13 @@
 #pragma once
 
 // std
-#include <format>
 #include <map>
+#include <mutex>
 
 using namespace std;
 
 // Qt
-#include <QtNetwork/qauthenticator.h>
-#include <qtemporaryfile.h>
+#include <qfile.h>
+
+// Qt SQL
+#include <QtSql/qsqlerror.h>

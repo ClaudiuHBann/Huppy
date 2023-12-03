@@ -28,7 +28,7 @@ void FileDownloader::Downloaded(QNetworkReply *aReply)
 
     if (aReply->error() || !aReply->isReadable())
     {
-        qDebug() << std::format("{} -> {} || not readable", Q_FUNC_INFO, aReply->errorString().toStdString());
+        qDebug() << QString("%1 -> %2 || not readable").arg(Q_FUNC_INFO, aReply->errorString());
         return;
     }
 
@@ -40,7 +40,7 @@ void FileDownloader::Downloaded(QNetworkReply *aReply)
 
     if (!file.open(QIODevice::WriteOnly))
     {
-        qDebug() << std::format("{} -> {}", Q_FUNC_INFO, file.errorString().toStdString());
+        qDebug() << QString("%1 -> %2").arg(Q_FUNC_INFO, file.errorString());
         return;
     }
 
@@ -49,6 +49,6 @@ void FileDownloader::Downloaded(QNetworkReply *aReply)
 
 void FileDownloader::AuthenticationRequired(QNetworkReply *, QAuthenticator *)
 {
-    qDebug() << std::format("{} ", Q_FUNC_INFO);
+    qDebug() << Q_FUNC_INFO;
 }
 } // namespace Client

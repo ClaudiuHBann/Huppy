@@ -1,19 +1,20 @@
-CONFIG += c++23 \
+CONFIG += c++20 \
           qtquickcompiler \
           precompile_header
 
-QT += quick
+QT += quick sql
 
+QT_DEBUG_PLUGINS = 1
 PRECOMPILED_HEADER = pch.h
 
 HEADERS += pch.h \
            Huppy.h \
-           FileDownloader.h \
-           ClientSQL.h
+           Client\FileDownloader.h \
+           Client\ClientSQL.h
 
 SOURCES += Main.cpp \
            Huppy.cpp \
-           FileDownloader.cpp \
-           ClientSQL.cpp
+           Client\FileDownloader.cpp \
+           Client\ClientSQL.cpp
 
 RESOURCES += Resources.qrc

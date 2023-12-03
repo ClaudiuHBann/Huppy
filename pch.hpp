@@ -1,4 +1,6 @@
-#pragma once
+#ifdef __cplusplus
 
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
+#include <QtQml/qqmlapplicationengine.h>
+#include <qguiapplication.h>
+
+#endif // __cplusplus

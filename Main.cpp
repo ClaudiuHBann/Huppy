@@ -1,6 +1,3 @@
-#include <QGuiApplication>
-#include <QtQml/qqmlapplicationengine.h>
-
 #define PATH_QML_MAIN "qrc:/Main.qml"
 #define PATH_QML_MAIN_SL QStringLiteral(PATH_QML_MAIN)
 

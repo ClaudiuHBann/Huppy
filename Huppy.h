@@ -3,6 +3,7 @@
 #include <qguiapplication.h>
 #include <qqmlapplicationengine.h>
 
+#include "Client/ClientSQL.h"
 #include "Client/FileDownloader.h"
 
 class Huppy
@@ -20,5 +21,6 @@ class Huppy
 
     bool mInitialized{};
 
+    Client::ClientSQL mClientSQL;
     Client::FileDownloader mFileDownloader;
 };

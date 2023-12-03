@@ -3,17 +3,17 @@
 
 using namespace Client;
 
-#define PATH_QML_MAIN "qrc:/Main.qml"
-#define PATH_QML_MAIN_SL QStringLiteral(PATH_QML_MAIN)
+constexpr auto PATH_QML_MAIN = "qrc:/Main.qml";
 
 Huppy::Huppy(int &aArgc, char **aArgv)
-    : mApp(aArgc, aArgv), mParent(mApp.parent()), mEngine(mParent), mInitialized(Initialize()), mFileDownloader(mParent)
+    : mApp(aArgc, aArgv), mParent(mApp.parent()), mEngine(mParent), mInitialized(Initialize()), mClientSQL(mParent),
+      mFileDownloader(mParent)
 {
 }
 
 bool Huppy::Initialize()
 {
-    mEngine.load(PATH_QML_MAIN_SL);
+    mEngine.load(PATH_QML_MAIN);
     if (mEngine.rootObjects().isEmpty())
     {
         return false;

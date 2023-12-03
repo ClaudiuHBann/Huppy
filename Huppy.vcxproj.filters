@@ -25,6 +25,12 @@
     <CustomBuild Include="debug\moc_predefs.h.cbt" />
     <ClCompile Include="debug\qmlcache_loader.cpp" />
     <ClCompile Include="Huppy.cpp" />
+    <ClCompile Include="Client\FileDownloader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientSQL.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="Resources_qmlcache.qrc" />
@@ -41,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Client\ClientSQL.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
     <ClInclude Include="Huppy.h" />
   </ItemGroup>
   <ItemGroup>
@@ -48,5 +57,10 @@
     <None Include="README.md" />
     <None Include=".gitignore" />
     <None Include=".gitattributes" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Client\FileDownloader.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

@@ -1,3 +1,11 @@
-#ifdef __cplusplus
+#pragma once
 
-#endif // __cplusplus
+// std
+#include <format>
+#include <map>
+
+using namespace std;
+
+// Qt
+#include <QtNetwork/qauthenticator.h>
+#include <qtemporaryfile.h>

@@ -3,6 +3,8 @@
 #include <qguiapplication.h>
 #include <qqmlapplicationengine.h>
 
+#include "Client/FileDownloader.h"
+
 class Huppy
 {
   public:
@@ -13,7 +15,10 @@ class Huppy
 
   private:
     QGuiApplication mApp;
+    QObject *mParent{};
     QQmlApplicationEngine mEngine{};
 
     bool mInitialized{};
+
+    Client::FileDownloader mFileDownloader;
 };

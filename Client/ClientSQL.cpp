@@ -23,6 +23,12 @@ ClientSQL::ClientSQL(QObject *aParent) : QObject(aParent), mDatabase(QSqlDatabas
 
 void ClientSQL::Initialize()
 {
+    if (!mDatabase.isValid())
+    {
+        qDebug() << QString("%1 -> %2").arg(Q_FUNC_INFO, mDatabase.lastError().text());
+        return;
+    }
+
     mDatabase.setHostName(DB_HOST_NAME);
     mDatabase.setPort(DB_HOST_PORT);
 
@@ -32,5 +38,10 @@ void ClientSQL::Initialize()
     mDatabase.setDatabaseName(DB_DATABASE_NAME);
 
     mInitialized = mDatabase.open();
+    if (!mDatabase.isOpen())
+    {
+        qDebug() << QString("%1 -> %2").arg(Q_FUNC_INFO, mDatabase.lastError().text());
+        return;
+    }
 }
 } // namespace Client

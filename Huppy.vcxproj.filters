@@ -37,6 +37,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Model\App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Category.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Client\ClientSQL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -46,23 +52,26 @@
     <ClCompile Include="Huppy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Model\Link.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Model\App.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Model\Category.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Model\Link.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
     <ClCompile Include="Model\Package.cpp">
-      <Filter>Generated Files</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Types.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Model\App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Category.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <QtMoc Include="Client\ClientSQL.h">
       <Filter>Header Files</Filter>
     </QtMoc>
@@ -70,6 +79,15 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <ClInclude Include="Huppy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Package.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <CustomBuild Include="pch.h">
@@ -112,19 +130,5 @@
     <QtRcc Include="Resources_qmlcache.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Model\App.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Category.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Link.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Package.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

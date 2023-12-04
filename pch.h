@@ -7,6 +7,7 @@
 using namespace std;
 
 // Qt
+#include <qdebug.h>
 #include <qfile.h>
 
 // Qt SQL

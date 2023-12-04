@@ -89,8 +89,7 @@
       <PrecompiledHeaderOutputFile>$(IntDir)\Huppy.pch</PrecompiledHeaderOutputFile>
       <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
-      <ProgramDataBaseFileName>
-      </ProgramDataBaseFileName>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -201,22 +200,25 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Model\Category.cpp" />
-    <ClCompile Include="Model\Link.cpp" />
     <ClCompile Include="Model\App.cpp" />
+    <ClCompile Include="Model\Category.cpp" />
     <ClCompile Include="Client\ClientSQL.cpp" />
     <ClCompile Include="Client\FileDownloader.cpp" />
     <ClCompile Include="Huppy.cpp" />
+    <ClCompile Include="Model\Link.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Model\Package.cpp" />
+    <ClCompile Include="Model\Types.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Model\Package.h" />
+    <ClInclude Include="Model\App.h" />
+    <ClInclude Include="Model\Category.h" />
     <QtMoc Include="Client\ClientSQL.h" />
     <QtMoc Include="Client\FileDownloader.h" />
-    <ClInclude Include="Model\Category.h" />
-    <ClInclude Include="Model\Link.h" />
-    <ClInclude Include="Model\App.h" />
     <ClInclude Include="Huppy.h" />
+    <ClInclude Include="Model\Link.h" />
+    <ClInclude Include="Model\Package.h" />
+    <ClInclude Include="Model\Types.h" />
     <CustomBuild Include="pch.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">echo /*-------------------------------------------------------------------- &gt;pch.h.cpp
 if errorlevel 1 goto VCEnd
@@ -290,7 +292,6 @@ echo #include "pch.h"&gt;&gt;pch.h.cpp</Command>
     <ClCompile Include="debug\Main_qml.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Model\Package.cpp" />
     <ClCompile Include="release\Main_qml.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

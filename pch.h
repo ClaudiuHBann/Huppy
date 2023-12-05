@@ -12,3 +12,5 @@ using namespace std;
 
 // Qt SQL
 #include <QtSql/qsqlerror.h>
+#include <QtSql/qsqlquery.h>
+#include <QtSql/qsqlrecord.h>

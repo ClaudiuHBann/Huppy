@@ -1,14 +1,14 @@
 <FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontFamily="Segoe UI" FontSize="12">
   <FlowDocument.Tag><![CDATA[{
-  "timestamp": "2023-12-04 04:29:44",
+  "timestamp": "2023-12-05 08:14:55",
   "files": {
     "C:\\Users\\Claudiu HBann\\Desktop\\Projects\\C++\\Huppy\\Huppy.vcxproj": {
-      "before": "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",
-      "after": "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"
+      "before": "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",
+      "after": "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"
     },
     "C:\\Users\\Claudiu HBann\\Desktop\\Projects\\C++\\Huppy\\Huppy.vcxproj.filters": {
-      "before": "5VhNb5tAEM25Uo+9Wz5WWoMx/irYkcGQREqktGlvkSK8jAMJsISF1FHVP9Zf18UYr2NITRoTKW0Uy8rGnrdv3ryZZX99ODhQDxe+17iHiLokGDXbLbHZgAAT2w2uR80knqNB83D8/p16HpEbwHGDfTygo6YTx+EnQaDYAd+iLd/FEaFkHrcw8QUb7sEjIUSCT2eJ69mCJIqdJgvTaKgnMfhHEUnC5Z9swXS9GKLGSYC9xIZR8wgCiKwY7Ab7D9Dsaw32o34L3LsETmwIYnfuQjT+0W8b0wH7RRNdGyJZN4ZI04w2MkRR64htWTba7Z+qUPhiupNlSGMRQ5Byp2MchgpW8GKh+AQrjmLDXCG2p7jsFQFVVGHjw1kAVcg2/x9QOQbLZirtlmTYGQ67nYGIBkNtiuSZKKPBwNBQT+qamtGVDM3UqkriKA4TxWGSOL7iBkyLACsLav+FFG99/1+AkiTCUEGB6XDaMyRZQuZgYiK5Z8hIG5pTNBANXdMlUZt0jKoK3EVY+ViSbubGcyuisKyH8dzyKKjCxko1f/yTpC6q6iSber/TN9tI70+6SO70e2gi9npImnSkab8rTSTTrKoTb16bbcsJb5SZFSsW9dPXokTIXS3sDbNRhcezpjh6dE8nfsimDJ8+Z8QG73IShi2W0o3Zs2r0m+nYTp2wDpfPg/XCdnydzbdrEj3UBKJ7LpuRl9nbxefTemHSHjAl3wOPpCOiJqzjJAzrSlem+akb3Na0+TPLDeoKvazXcwvfWtdQK8bXhxDoixGqmHJ1FNw2TWpKp2jJzcleYslVMG7JJ6KvLflyiITGxNfSgy+nULDks2F41DUXvlQA2jLlPtC8QuYyUz47dh5ozSNf4Cw2LFlf+Nw19SFknnl5/DKhQ+w83w480DL5VdxYGJE2zJLry7SnXd35XnlH2HqIK/HlKiyvgQJOBB5YFF4BKWPEHvuudozMfdJ6JTjObasllJ5v9k2wHkxexbxjcJ5hBOwQTFtOC8/i4rzYSZFHXxcnX+KAeXmmOtYAWTyaLg1fn92yBDJHY4vd6lz96TS3M4X55tcJzBeK6asJsEyxJxm+TqGUMN0fcDHBK7YRvsofs2nar5fq1ldFuSvYxUFNuBVmVpn4yzM4419sCHl6squV4qji0dblzJd4QedhNrLMkvBiuMd02SVLdhE7/g0=",
-      "after": "5Vhdb5pQGN71kt3sFxgvlxxBxK+BNoLQNmmTfmx3TRo8vAotcCgHOptlf3e/YwcQsUInzrKkm5EYj/A879fzvuf48+O7d/LR0nUajxBQm3ijZrvFNxvgYWLa3mLUjMI5GjSPxh/eyxcBuQMcNtjtHh01rTD0P3McxRa4Bm25Ng4IJfOwhYnLmfAIDvEh4Fw6i2zH5ASe7zQZTKMhn4bgHgck8pOvbEG3nRCCxqmHnciEUfMYPAiMEMwG+wVo+liDveSvnv0QwakJXmjPbQjG3/ttbTpgbzRRlSESVW2IFEVrI43nlQ7fFkWt3f4hc4UHY0sSSG0Zghf7TsfY9yUs4eVScgmWLMmEuURMR7LZFQCVZG7j5hRA5lLj/wNXTsAwWZZ2p2TYGQ67nQGPBkNlisQZL6LBQFNQT+jqitYVNEVXqqbEkiyWFIulxHIl22O58LC0pOYfpOKt238FlEQBhgoZmA6nPU0QBaQPJjoSe5qIlKE+RQNeUxVV4JVJR6uagYcAS59Kws3UeGEEFJJ6GM8Nh4LMbaxU08c/6dR11TyJutrv9PU2UvuTLhI7/R6a8L0eEiYdYdrvChNB16vmKW9em23L8u+kmRFKBnXja1mSyF0t7A17I3PPZ01x9KiOSlyfTZl8+pwTE5ybie+3WEg3Zs+q0W+GYzt03BoumwfrhW18lc23BQmeaiJRHZvNyJv04/ryrF6auAdMyTfPIfGIqInrJPL9usKV5vzM9u5rMv7csL26oJN6vTDwvbGAWjm+PPlAD2aoIsrVVnBbNLEoraIkNyd7iSRXYLkkX0BfS/JgisvwnODc+IIY9yVI8DL7y8G3JHgQg+oUIpSKb1/UNVBm+3ohD86G9OqDz9RRH0OqjcPxIxoSV4mPTHmIfGztX/Y5UBL8KqorjEITZtHiJu5dtw+uU678rcNaif5WsHkNFHgCcMCg8OpMeQzyYKY+sQPerR8A2yrRltXCs7DYVXY6lqOvXcuXcsLMuZooixuYpFzqS1YaQFYP2GBn/9vfzfydIcyMXwcwWyiGrybCsoy96OHfKZQST1+HuEIPKAtHsndhRhUl8vz0VpR+jpYl+DK8whuTMQOgcX9J6qnFzpt7EyWoCcVzF9mBNP3TavwL"
+      "before": "5Vldb5swFO3zpL3vMcrjJAdCyNegqQKBNlIrdev2Vqkixgm0gCmGLtW0v7jfNAMBp4UudI0rdasSRXGTc3zuvT7Xdn59ODhQj9a+17pDEXFxcNjudsR2CwUQ226wOmwn8RKM2keT9+/U8whfIxi36McDcth24jj8JAgEOsi3SMd3YYQJXsYdiH3BRnfIwyGKBJ8sEtezBUkUe20K02qp8xj5xxFOwuwtHTBdL0ZRax5AL7HRYfsYBSiyYmS36H8Qyb/Won/qt8C9TdDcRkHsLl0UTX4Mu8ZsRB9gqmtjIOvGGGia0QWGKGo9sSvLRrf7UxUqX0xnkkEa6xgFqXYygWGoQAWu14qPoeIoNloq2PYUlz4jRBRV2PpwDqAK+eT/AyknyLJplnanZNwbj/u9kQhGY20G5IUog9HI0MBA6pua0ZcMzdSapsRRHJoUh6bE8RU3oLkIoLIm9l+k4q3P/wsiOIkgapCB2Xg2MCRZAuZoagJ5YMhAG5szMBINXdMlUZv2jKYZuI2g8rEm3HQ1nlsRQVk9TJaWR5AqbI00Wx//pKiLpnmSTX3YG5pdoA+nfSD3hgMwFQcDIE170mzYl6aSaTbNEzOvbdtywmtlYcWKRfz0ua5J5C4Le8NqVOFhr6m2Ht3TsR/SLsO6zxm2kXc5DcMODelW79kY/XY4HodOKOGKflAOPMbXaX9b4eieE4nuubRHXuYvF59POdHMrNhaWARxgt+oSC1mhr8HHk47ECeukyQMeWUjL6l59sJp+jnFqRvc8CKwVi7khu0GvKCz1XxuwRtrxatM89h/vQ8RebGKJpa12Sg/tpTUspyqYW3ve2oMawPGDOsJ9NKwXk6RkBj7WnosYBIqhvVsGoZaamFDjKi0LF4E9aa1DzavkprctJ6NXQCVgSoGWJgeWBY/gsywuMBndsUF+YGj8GPI/eTl+HWLIITO862CAWV108SpKpsrGy2S1eWZ5QZXt75X75aPjv81nrWBZeVb4YmQh+i+5BWYckX0wuBqx2Zrn7JeiY5pK12zdk+8b2n82ZiyJpvLfevjw8nWJ7NxpjOMED0Yko7TgYu4ukvYKZGhl8uODTHCYuGlFcqBsnpcy6yMn5HkAaReBS1603n1pyPIzhAWky8DWAxUw8eJsC5jTyp8nUKpUbo/4mqAN2ojeFVcPZG0E2XZ5VdFxaqgl2mceBt047rkp524Q/VXDaEIT37dWG3CDK0sZzbECrqA2YoyDcKL6R7KpReP+Y8Tk98=",
+      "after": "5Vhdj5pAFN3nJn1r34mPTUYQ8YOCbgRh12Q32Y/2bZMNDqOwBYZlYOum6X/vACoqbMW602RbIyGOes7ce+6cO8yHjycn6unC97gnFBEXB4NGqyk0OBRAbLvBfNBI4hnoN06H79+pVxF+QDDm6M8DMmg4cRx+5nkCHeRbpOm7MMIEz+ImxD5voyfk4RBFvE+mievZvCgI7QaF4Th1EiP/LMJJmH2kA6brxSjiJgH0EhsNGmcoQJEVI5uj3yCS/42jL/Vr4D4maGKjIHZnLoqGP3otY9ynbzDSNRlIuiEDTTNawBAErS20JMlotX6qfOmP6UwySGMRoyCNnQxhGCpQgYuF4mOoOIqNZgq2PcWlV4SIovIbP84BVD6f/H8QyjmybKrSfknktix32n0B9GVtDKSpIIF+39BAV+yYmtERDc3U6kriKA4VxaGSOL7iBlSLACoLYv+BFG99/jeI4CSCqIYCY3ncNURJBGZ/ZAKpa0hAk80x6AuGrumioI3aRl0FHiOofKpIN12NV1ZEUFYPw5nlEaTyGyP11sc/GdRtXZ0kU++1e2YL6L1RB0jtXheMhG4XiKO2OO51xJFomnV1Ksxr07ac8EGZWrFiET+9FhVC7rOwNxyNym/3mnLr0T0d+yHtMkX3ucQ28u5GYdikKd3oPUuj30zHbur4NdyqH6wHdvF12t/mOHpmRKJ7Lu2Rd/nt9vqCEc3Yiq2pRRAj+GUUqcWM8ffAw2kHYsR1noQhKzXykppkN0bTzyku3OAbKwJr7kJm2G7ACjpbzVcW/GbNWZVpnvsvzyEiR0dRx7KWG+VdS0ktyykb1ua+p8KwlmCFYb2Avjasoymu40sMi8mXrOpQggxvNf8d8LVBvSZotS0dxaB7pbTnhnQo6hpolZD1QJHxLTtiR5CZERP4zIqYIG+5BTuG3CuOx09IjH0tfcAu1A2hc7gNFEBZ3dRxodLGyUbTZH53abnB/aPvVTvhzqN9hR8tYYvyLfFEyEN0z/HqTEUOimTmMdHjgPswQnRjTZpOE07jssvuDaxAX4dWDBWEq+AYUZa3u1m5sBMrTyCtB2jRk6L7323h9qZwNfl1AlcD5fQxIqxS7MUI/06hVET6OsQ1PKAqHen6b9JJlZfI9rN+eekXaCuBr+MbuLFTWAGQ1F+yemrS04mDiTLUjGI7RHp8kR9xDn8B"
     }
   }
 }]]></FlowDocument.Tag>
@@ -21,7 +21,7 @@
       <Span TextDecorations="Underline">Project Format Conversion</Span>
     </Paragraph>
     <Paragraph Margin="12,8" FontSize="18">
-      <Span>Report generated on 2023-12-04 04:29:44</Span>
+      <Span>Report generated on 2023-12-05 08:14:55</Span>
     </Paragraph>
   </Section>
   <Section>
@@ -192,6 +192,60 @@
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
               <Span><![CDATA[      <Command Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightGreen"><![CDATA['=='Debug|x64'">$(QTDIR)\bin\moc]]></Span><Span><![CDATA[.]]></Span><Span><![CDATA[exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/moc_predefs.h" ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/mkspecs/win32-msvc]]></Span><Span><![CDATA[ -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQuick]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtOpenGL]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtGui]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQmlModels]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQml]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQmlIntegration]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtNetwork]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtSql]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtCore]]></Span><Span><![CDATA[ -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Client\ClientSQL.h -o debug\moc_ClientSQL.cpp</Command>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Database.h;release\moc_predefs.h;]]></Span><Span Background="LightCoral"><![CDATA[C:\QT\6.6.1\MSVC2019_64\bin\moc]]></Span><Span><![CDATA[.exe;%(AdditionalInputs)</AdditionalInputs>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Database.h;release\moc_predefs.h;]]></Span><Span Background="LightGreen"><![CDATA[$(QTDIR)\bin\moc]]></Span><Span><![CDATA[.exe;%(AdditionalInputs)</AdditionalInputs>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <Command Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightCoral"><![CDATA['=='Release|x64'">C:\QT\6]]></Span><Span><![CDATA[.]]></Span><Span Background="LightCoral"><![CDATA[6.1\MSVC2019_64\bin\moc.]]></Span><Span><![CDATA[exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/moc_predefs.h" ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/mkspecs/win32-msvc]]></Span><Span><![CDATA[ -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtQuick]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtOpenGL]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtGui]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtQmlModels]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtQml]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtQmlIntegration]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtNetwork]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtSql]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtCore]]></Span><Span><![CDATA[ -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Database.h -o release\moc_Database.cpp</Command>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <Command Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightGreen"><![CDATA['=='Release|x64'">$(QTDIR)\bin\moc]]></Span><Span><![CDATA[.]]></Span><Span><![CDATA[exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/moc_predefs.h" ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/mkspecs/win32-msvc]]></Span><Span><![CDATA[ -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQuick]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtOpenGL]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtGui]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQmlModels]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQml]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQmlIntegration]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtNetwork]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtSql]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtCore]]></Span><Span><![CDATA[ -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Database.h -o release\moc_Database.cpp</Command>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Database.h;debug\moc_predefs.h;]]></Span><Span Background="LightCoral"><![CDATA[C:\QT\6.6.1\MSVC2019_64\bin\moc]]></Span><Span><![CDATA[.exe;%(AdditionalInputs)</AdditionalInputs>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Database.h;debug\moc_predefs.h;]]></Span><Span Background="LightGreen"><![CDATA[$(QTDIR)\bin\moc]]></Span><Span><![CDATA[.exe;%(AdditionalInputs)</AdditionalInputs>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <Command Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightCoral"><![CDATA['=='Debug|x64'">C:\QT\6]]></Span><Span><![CDATA[.]]></Span><Span Background="LightCoral"><![CDATA[6.1\MSVC2019_64\bin\moc.]]></Span><Span><![CDATA[exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/moc_predefs.h" ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/mkspecs/win32-msvc]]></Span><Span><![CDATA[ -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtQuick]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtOpenGL]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtGui]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtQmlModels]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtQml]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtQmlIntegration]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtNetwork]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtSql]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[-IC:/QT/6.6.1/MSVC2019_64/include/QtCore]]></Span><Span><![CDATA[ -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Database.h -o debug\moc_Database.cpp</Command>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[      <Command Condition="'$(Configuration)|$(Platform)]]></Span><Span Background="LightGreen"><![CDATA['=='Debug|x64'">$(QTDIR)\bin\moc]]></Span><Span><![CDATA[.]]></Span><Span><![CDATA[exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/moc_predefs.h" ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/mkspecs/win32-msvc]]></Span><Span><![CDATA[ -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQuick]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtOpenGL]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtGui]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQmlModels]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQml]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtQmlIntegration]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtNetwork]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtSql]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[-I$(QTDIR)/include/QtCore]]></Span><Span><![CDATA[ -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Database.h -o debug\moc_Database.cpp</Command>]]></Span>
             </Paragraph>
           </TableCell>
         </TableRow>
@@ -619,7 +673,7 @@
           </TableCell>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
-              <Span Background="LightGreen"><![CDATA[      <Compression>default</Compression>]]></Span>
+              <Span Background="LightGreen"><![CDATA[      <NoZstd>true</NoZstd>]]></Span>
             </Paragraph>
           </TableCell>
         </TableRow>
@@ -629,7 +683,7 @@
           </TableCell>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
-              <Span Background="LightGreen"><![CDATA[      <NoZstd>true</NoZstd>]]></Span>
+              <Span Background="LightGreen"><![CDATA[      <Compression>default</Compression>]]></Span>
             </Paragraph>
           </TableCell>
         </TableRow>
@@ -894,18 +948,20 @@
           </TableCell>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
-              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[<QtMoc]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[Include="Client\FileDownloader]]></Span><Span><![CDATA[.]]></Span><Span Background="LightGreen"><![CDATA[h" />]]></Span>
+              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[<QtMoc]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[Include="Database]]></Span><Span><![CDATA[.]]></Span><Span Background="LightGreen"><![CDATA[h" />]]></Span>
             </Paragraph>
           </TableCell>
         </TableRow>
         <TableRow>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
-              <Span Background="LightCoral"><![CDATA[      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/moc_predefs.h" -I$(QTDIR)/mkspecs/win32-msvc -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" -I$(QTDIR)/include -I$(QTDIR)/include/QtQuick -I$(QTDIR)/include/QtOpenGL -I$(QTDIR)/include/QtGui -I$(QTDIR)/include/QtQmlModels -I$(QTDIR)/include/QtQml -I$(QTDIR)/include/QtQmlIntegration -I$(QTDIR)/include/QtNetwork -I$(QTDIR)/include/QtSql -I$(QTDIR)/include/QtCore -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Client\ClientSQL.h -o release\moc_ClientSQL.cpp</Command>]]></Span>
+              <Span><![CDATA[      ]]></Span><Span Background="LightCoral"><![CDATA[<Command]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightCoral"><![CDATA[Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc]]></Span><Span><![CDATA[.]]></Span><Span Background="LightCoral"><![CDATA[exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/moc_predefs.]]></Span><Span><![CDATA[h" ]]></Span><Span Background="LightCoral"><![CDATA[-I$(QTDIR)/mkspecs/win32-msvc -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" -I$(QTDIR)/include -I$(QTDIR)/include/QtQuick -I$(QTDIR)/include/QtOpenGL -I$(QTDIR)/include/QtGui -I$(QTDIR)/include/QtQmlModels -I$(QTDIR)/include/QtQml -I$(QTDIR)/include/QtQmlIntegration -I$(QTDIR)/include/QtNetwork -I$(QTDIR)/include/QtSql -I$(QTDIR)/include/QtCore -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Client\ClientSQL.h -o release\moc_ClientSQL.cpp</Command>]]></Span>
             </Paragraph>
           </TableCell>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
-            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[<QtMoc]]></Span><Span><![CDATA[ ]]></Span><Span Background="LightGreen"><![CDATA[Include="Client\FileDownloader]]></Span><Span><![CDATA[.]]></Span><Span><![CDATA[h" ]]></Span><Span Background="LightGreen"><![CDATA[/>]]></Span>
+            </Paragraph>
           </TableCell>
         </TableRow>
         <TableRow>
@@ -962,6 +1018,106 @@
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
               <Span Background="LightCoral"><![CDATA[      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_ClientSQL.cpp;%(Outputs)</Outputs>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    </CustomBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    <CustomBuild Include="Database.h">]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Database.h;release\moc_predefs.h;$(QTDIR)\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/moc_predefs.h" -I$(QTDIR)/mkspecs/win32-msvc -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" -I$(QTDIR)/include -I$(QTDIR)/include/QtQuick -I$(QTDIR)/include/QtOpenGL -I$(QTDIR)/include/QtGui -I$(QTDIR)/include/QtQmlModels -I$(QTDIR)/include/QtQml -I$(QTDIR)/include/QtQmlIntegration -I$(QTDIR)/include/QtNetwork -I$(QTDIR)/include/QtSql -I$(QTDIR)/include/QtCore -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Database.h -o release\moc_Database.cpp</Command>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC Database.h</Message>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_Database.cpp;%(Outputs)</Outputs>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Database.h;debug\moc_predefs.h;$(QTDIR)\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QMLINTEGRATION_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include "C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/moc_predefs.h" -I$(QTDIR)/mkspecs/win32-msvc -I"C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy" -I$(QTDIR)/include -I$(QTDIR)/include/QtQuick -I$(QTDIR)/include/QtOpenGL -I$(QTDIR)/include/QtGui -I$(QTDIR)/include/QtQmlModels -I$(QTDIR)/include/QtQml -I$(QTDIR)/include/QtQmlIntegration -I$(QTDIR)/include/QtNetwork -I$(QTDIR)/include/QtSql -I$(QTDIR)/include/QtCore -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\ATLMFC\include" -I"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um" Database.h -o debug\moc_Database.cpp</Command>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC Database.h</Message>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_Database.cpp;%(Outputs)</Outputs>]]></Span>
             </Paragraph>
           </TableCell>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
@@ -1142,12 +1298,29 @@
           </TableCell>
         </TableRow>
         <TableRow>
-          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
         </TableRow>
         <TableRow>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
-              <Span Background="LightCoral"><![CDATA[    <ClCompile Include="debug\moc_FileDownloader.cpp">]]></Span>
+              <Span Background="LightCoral"><![CDATA[    </ClCompile>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    <ClCompile Include="debug\moc_Database.cpp">]]></Span>
             </Paragraph>
           </TableCell>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
@@ -1173,6 +1346,52 @@
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0" />
           </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    <ClCompile Include="release\moc_Database.cpp">]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    </ClCompile>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    <ClCompile Include="debug\moc_FileDownloader.cpp">]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
         </TableRow>
         <TableRow>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
@@ -1430,6 +1649,33 @@
         <TableRow>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightCoral"><![CDATA[<CustomBuild]]></Span><Span><![CDATA[ Include="Database.h">]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[<QtMoc]]></Span><Span><![CDATA[ Include="Database.h">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightCoral"><![CDATA[</CustomBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span><![CDATA[    ]]></Span><Span Background="LightGreen"><![CDATA[</QtMoc>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
               <Span><![CDATA[    ]]></Span><Span Background="LightCoral"><![CDATA[<CustomBuild]]></Span><Span><![CDATA[ Include="Client\FileDownloader.h">]]></Span>
             </Paragraph>
           </TableCell>
@@ -1540,7 +1786,7 @@
         <TableRow>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
             <Paragraph FontFamily="Consolas" Margin="4, 0">
-              <Span Background="LightCoral"><![CDATA[    <ClCompile Include="debug\moc_FileDownloader.cpp">]]></Span>
+              <Span Background="LightCoral"><![CDATA[    <ClCompile Include="debug\moc_Database.cpp">]]></Span>
             </Paragraph>
           </TableCell>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
@@ -1549,6 +1795,66 @@
         </TableRow>
         <TableRow>
           <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    <ClCompile Include="release\moc_Database.cpp">]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <Filter>Generated Files</Filter>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    </ClCompile>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    <ClCompile Include="debug\moc_FileDownloader.cpp">]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[      <Filter>Generated Files</Filter>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightCoral"><![CDATA[    </ClCompile>]]></Span>
+            </Paragraph>
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
         </TableRow>
         <TableRow>
           <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
@@ -2667,4 +2973,4 @@
     <Paragraph />
   </Section>
 </FlowDocument>
-<!--m8CcgXXKlTQYL6zQVZIQRgfJ8Cd9uUbacpGefUtUj1E=-->
+<!--99vpqeYm3MZazBtrUksZwytnCTmP/ATHiXLeLEuu0GU=-->

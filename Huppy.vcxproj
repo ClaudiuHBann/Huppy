@@ -89,8 +89,7 @@
       <PrecompiledHeaderOutputFile>$(IntDir)\Huppy.pch</PrecompiledHeaderOutputFile>
       <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
-      <ProgramDataBaseFileName>
-      </ProgramDataBaseFileName>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -131,8 +130,8 @@
     </QtMoc>
     <QtRcc>
       <InitFuncName>Resources_qmlcache</InitFuncName>
-      <Compression>default</Compression>
       <NoZstd>true</NoZstd>
+      <Compression>default</Compression>
       <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
       <QtRccDir>$(Configuration)</QtRccDir>
       <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
@@ -201,29 +200,29 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Database.cpp" />
-    <ClCompile Include="Magic.cpp" />
-    <ClCompile Include="Model\IModel.cpp" />
     <ClCompile Include="Model\App.cpp" />
     <ClCompile Include="Model\Category.cpp" />
     <ClCompile Include="Client\ClientSQL.cpp" />
+    <ClCompile Include="Database.cpp" />
     <ClCompile Include="Client\FileDownloader.cpp" />
     <ClCompile Include="Huppy.cpp" />
+    <ClCompile Include="Model\IModel.cpp" />
     <ClCompile Include="Model\Link.cpp" />
+    <ClCompile Include="Magic.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Model\Package.cpp" />
     <ClCompile Include="Model\Types.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="Database.h" />
-    <ClInclude Include="Magic.h" />
-    <ClInclude Include="Model\IModel.h" />
     <ClInclude Include="Model\App.h" />
     <ClInclude Include="Model\Category.h" />
     <QtMoc Include="Client\ClientSQL.h" />
+    <QtMoc Include="Database.h" />
     <QtMoc Include="Client\FileDownloader.h" />
     <ClInclude Include="Huppy.h" />
+    <ClInclude Include="Model\IModel.h" />
     <ClInclude Include="Model\Link.h" />
+    <ClInclude Include="Magic.h" />
     <ClInclude Include="Model\Package.h" />
     <ClInclude Include="Model\Types.h" />
     <CustomBuild Include="pch.h">

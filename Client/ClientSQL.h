@@ -1,7 +1,6 @@
 #pragma once
 
-#include <QtSql/qsqldatabase.h>
-#include <qobject.h>
+#include "Database.h"
 
 namespace Client
 {
@@ -13,10 +12,6 @@ class ClientSQL : public QObject
     ClientSQL(QObject *aParent);
 
   private:
-    QSqlDatabase mDatabase;
-
-    bool mInitialized{};
-
-    void Initialize();
+    Database mDatabase;
 };
 } // namespace Client

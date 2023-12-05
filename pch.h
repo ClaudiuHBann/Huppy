@@ -1,5 +1,8 @@
 #pragma once
 
+// OlivierNemoz
+#include "Utility/Obfuscate.h"
+
 // std
 #include <map>
 #include <mutex>

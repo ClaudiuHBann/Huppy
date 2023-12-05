@@ -14,7 +14,7 @@ Huppy::Huppy(int &aArgc, char **aArgv)
 void Huppy::Initialize()
 {
     mEngine.load(PATH_QML_MAIN);
-    Q_ASSERT_X(mEngine.rootObjects().isEmpty(), "function", mEngine.catchError().toString().toStdString().c_str());
+    Q_ASSERT_X(!mEngine.rootObjects().isEmpty(), "function", mEngine.catchError().toString().toStdString().c_str());
 }
 
 int Huppy::Run()

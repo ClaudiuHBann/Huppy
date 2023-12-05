@@ -13,6 +13,7 @@ HEADERS += pch.h \
            Database.h \
            Client\FileDownloader.h \
            Client\ClientSQL.h \
+           Utility\Obfuscate.h \
            Model\Types.h \
            Model\IModel.h \
            Model\App.h \
@@ -26,6 +27,7 @@ SOURCES += Main.cpp \
            Database.cpp \
            Client\FileDownloader.cpp \
            Client\ClientSQL.cpp \
+           Utility\Obfuscate.cpp \
            Model\Types.cpp \
            Model\IModel.cpp \
            Model\App.cpp \

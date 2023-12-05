@@ -3,22 +3,21 @@
 
 namespace
 {
-constexpr auto DB_DRIVER = "QPSQL";
+const auto DB_DRIVER = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("QPSQL")));
 
-constexpr auto DB_HOST_NAME = "localhost";
+const auto DB_HOST_NAME = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("localhost")));
 constexpr auto DB_HOST_PORT = 5432;
 
-constexpr auto DB_USER_NAME = "Huppy";
-constexpr auto DB_PASSWORD = "happyhubapp";
+const auto DB_USER_NAME = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("huppy")));
+const auto DB_PASSWORD = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("huppyhubapp")));
 
-constexpr auto DB_DATABASE_NAME = "Huppy";
+const auto DB_DATABASE_NAME = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("Huppy")));
 } // namespace
 
 Database::Database(QObject *aParent) : QObject(aParent), mDatabase(QSqlDatabase::addDatabase(DB_DRIVER))
 {
     Initialize();
 }
-#include "Model/App.h"
 
 void Database::Initialize()
 {

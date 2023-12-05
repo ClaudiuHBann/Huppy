@@ -73,6 +73,9 @@
     <ClCompile Include="Model\Types.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Utility\Obfuscate.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Model\App.h">
@@ -111,6 +114,9 @@
     <CustomBuild Include="pch.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <ClInclude Include="Utility\Obfuscate.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="debug\Main_qml.cpp">

@@ -26,11 +26,7 @@ void FileDownloader::Downloaded(QNetworkReply *aReply)
 {
     aReply->deleteLater();
 
-    if (aReply->error() || !aReply->isReadable())
-    {
-        qDebug() << QString("%1 || not readable").arg(aReply->errorString());
-        return;
-    }
+    Q_ASSERT_X(!aReply->error() && aReply->isReadable(), "function", aReply->errorString().toStdString().c_str());
 
     QFile file;
     {
@@ -38,17 +34,12 @@ void FileDownloader::Downloaded(QNetworkReply *aReply)
         file.setFileName(mURLToFile[aReply]);
     }
 
-    if (!file.open(QIODevice::WriteOnly))
-    {
-        qDebug() << QString("%1 -> %2").arg(Q_FUNC_INFO, file.errorString());
-        return;
-    }
-
+    Q_ASSERT_X(file.open(QIODevice::WriteOnly), "function", file.errorString().toStdString().c_str());
     file.write(aReply->readAll());
 }
 
 void FileDownloader::AuthenticationRequired(QNetworkReply *, QAuthenticator *)
 {
-    qDebug() << Q_FUNC_INFO;
+    Q_ASSERT_X(false, "function", "");
 }
 } // namespace Client

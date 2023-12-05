@@ -6,23 +6,18 @@ using namespace Client;
 constexpr auto PATH_QML_MAIN = "qrc:/Main.qml";
 
 Huppy::Huppy(int &aArgc, char **aArgv)
-    : mApp(aArgc, aArgv), mParent(mApp.parent()), mEngine(mParent), mInitialized(Initialize()), mClientSQL(mParent),
-      mFileDownloader(mParent)
+    : mApp(aArgc, aArgv), mParent(mApp.parent()), mEngine(mParent), mClientSQL(mParent), mFileDownloader(mParent)
 {
+    Initialize();
 }
 
-bool Huppy::Initialize()
+void Huppy::Initialize()
 {
     mEngine.load(PATH_QML_MAIN);
-    if (mEngine.rootObjects().isEmpty())
-    {
-        return false;
-    }
-
-    return true;
+    Q_ASSERT_X(mEngine.rootObjects().isEmpty(), "function", mEngine.catchError().toString().toStdString().c_str());
 }
 
 int Huppy::Run()
 {
-    return mInitialized ? mApp.exec() : -1;
+    return mApp.exec();
 }

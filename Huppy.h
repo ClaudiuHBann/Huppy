@@ -11,15 +11,13 @@ class Huppy
   public:
     Huppy(int &aArgc, char **aArgv);
 
-    bool Initialize();
+    void Initialize();
     int Run();
 
   private:
     QGuiApplication mApp;
     QObject *mParent{};
     QQmlApplicationEngine mEngine{};
-
-    bool mInitialized{};
 
     Client::ClientSQL mClientSQL;
     Client::FileDownloader mFileDownloader;

@@ -28,7 +28,7 @@ void FileDownloader::Downloaded(QNetworkReply *aReply)
 
     if (aReply->error() || !aReply->isReadable())
     {
-        qDebug() << QString("%1 -> %2 || not readable").arg(Q_FUNC_INFO, aReply->errorString());
+        qDebug() << QString("%1 || not readable").arg(aReply->errorString());
         return;
     }
 

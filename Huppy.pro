@@ -9,9 +9,12 @@ PRECOMPILED_HEADER = pch.h
 
 HEADERS += pch.h \
            Huppy.h \
+           Magic.h \
+           Database.h \
            Client\FileDownloader.h \
            Client\ClientSQL.h \
            Model\Types.h \
+           Model\IModel.h \
            Model\App.h \
            Model\Category.h \
            Model\Link.h \
@@ -19,9 +22,12 @@ HEADERS += pch.h \
 
 SOURCES += Main.cpp \
            Huppy.cpp \
+           Magic.cpp \
+           Database.cpp \
            Client\FileDownloader.cpp \
            Client\ClientSQL.cpp \
            Model\Types.cpp \
+           Model\IModel.cpp \
            Model\App.cpp \
            Model\Category.cpp \
            Model\Link.cpp \

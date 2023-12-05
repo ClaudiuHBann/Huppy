@@ -63,6 +63,14 @@
     </ClCompile>
     <ClCompile Include="Model\Types.cpp">
       <Filter>Source Files</Filter>
+    <ClCompile Include="Model\IModel.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Magic.cpp">
+      <Filter>Generated Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +101,12 @@
     <CustomBuild Include="pch.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <ClInclude Include="Model\IModel.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Magic.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="debug\Main_qml.cpp">
@@ -130,5 +144,10 @@
     <QtRcc Include="Resources_qmlcache.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Database.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

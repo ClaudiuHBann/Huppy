@@ -216,17 +216,17 @@
     <ClCompile Include="Utility\Obfuscate.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Model\App.h" />
-    <ClInclude Include="Model\Category.h" />
+    <QtMoc Include="Model\App.h" />
+    <QtMoc Include="Model\Category.h" />
     <ClInclude Include="Utility\Obfuscate.h" />
     <QtMoc Include="Client\ClientSQL.h" />
     <QtMoc Include="Database.h" />
     <QtMoc Include="Client\FileDownloader.h" />
     <ClInclude Include="Huppy.h" />
     <ClInclude Include="Model\IModel.h" />
-    <ClInclude Include="Model\Link.h" />
+    <QtMoc Include="Model\Link.h" />
     <ClInclude Include="Magic.h" />
-    <ClInclude Include="Model\Package.h" />
+    <QtMoc Include="Model\Package.h" />
     <ClInclude Include="Model\Types.h" />
     <CustomBuild Include="pch.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">echo /*-------------------------------------------------------------------- &gt;pch.h.cpp

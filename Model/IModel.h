@@ -19,13 +19,6 @@
 #define TR_SV_PROP(prop) record.setValue(#prop, QVariant::fromValue(prop));
 #define TR_SV_PROPS(...) EXPAND(PASTE(TR_SV_PROP, __VA_ARGS__))
 
-#define DEFINE_MODEL_PROPS(...)                                                                                        \
-  public:                                                                                                              \
-    constexpr props_cref Props() const override                                                                        \
-    {                                                                                                                  \
-        return {__VA_ARGS__};                                                                                          \
-    }
-
 #define DEFINE_MODEL_FR(...)                                                                                           \
   public:                                                                                                              \
     void FromRecord(const QSqlRecord &aRecord) override                                                                \
@@ -44,9 +37,62 @@
     }
 
 #define DEFINE_MODEL(...)                                                                                              \
-    DEFINE_MODEL_PROPS(__VA_ARGS__);                                                                                   \
+    DEFINE_PROPS(__VA_ARGS__);                                                                                         \
     DEFINE_MODEL_FR(__VA_ARGS__);                                                                                      \
     DEFINE_MODEL_TR(__VA_ARGS__);
+
+#define DEFINE_PROP_GET(name)                                                                                          \
+  public:                                                                                                              \
+    inline decltype(auto) Get##name() const                                                                            \
+    {                                                                                                                  \
+        return name;                                                                                                   \
+    }
+
+#define DEFINE_PROP_ON_CHANGE(name)                                                                                    \
+  signals:                                                                                                             \
+    constexpr void OnChanged##name()                                                                                   \
+    {                                                                                                                  \
+    }
+
+#define DEFINE_PROP_SET(name)                                                                                          \
+  public:                                                                                                              \
+    inline decltype(auto) Set##name(const decltype(name) &a##name)                                                     \
+    {                                                                                                                  \
+        if (name == a##name)                                                                                           \
+        {                                                                                                              \
+            return *this;                                                                                              \
+        }                                                                                                              \
+                                                                                                                       \
+        name = a##name;                                                                                                \
+        emit OnChanged##name();                                                                                        \
+                                                                                                                       \
+        return *this;                                                                                                  \
+    }
+
+#define DEFINE_PROP(index, name)                                                                                       \
+  private:                                                                                                             \
+    std::tuple_element_t<index, props> name{};                                                                         \
+                                                                                                                       \
+    Q_PROPERTY(std::tuple_element_t<index, props> name READ Get##name WRITE Set##name NOTIFY OnChanged##name);         \
+                                                                                                                       \
+    DEFINE_PROP_GET(name);                                                                                             \
+    DEFINE_PROP_ON_CHANGE(name);                                                                                       \
+    DEFINE_PROP_SET(name);
+
+// clang-format off
+#define DEFINE_PROPS(...) EXPAND(GET_MACRO(__VA_ARGS__, DEFINE_PROP10, DEFINE_PROP9, DEFINE_PROP8, DEFINE_PROP7, DEFINE_PROP6, DEFINE_PROP5, DEFINE_PROP4, DEFINE_PROP3, DEFINE_PROP2, DEFINE_PROP1)(__VA_ARGS__))
+
+#define DEFINE_PROP1(v1) DEFINE_PROP(0, v1)
+#define DEFINE_PROP2(v1, v2) DEFINE_PROP1(v1) DEFINE_PROP(1, v2)
+#define DEFINE_PROP3(v1, v2, v3) DEFINE_PROP2(v1, v2) DEFINE_PROP(2, v3)
+#define DEFINE_PROP4(v1, v2, v3, v4) DEFINE_PROP3(v1, v2, v3) DEFINE_PROP(3, v4)
+#define DEFINE_PROP5(v1, v2, v3, v4, v5) DEFINE_PROP4(v1, v2, v3, v4) DEFINE_PROP(4, v5)
+#define DEFINE_PROP6(v1, v2, v3, v4, v5, v6) DEFINE_PROP5(v1, v2, v3, v4, v5) DEFINE_PROP(5, v6)
+#define DEFINE_PROP7(v1, v2, v3, v4, v5, v6, v7) DEFINE_PROP6(v1, v2, v3, v4, v5, v6) DEFINE_PROP(6, v7)
+#define DEFINE_PROP8(v1, v2, v3, v4, v5, v6, v7, v8) DEFINE_PROP7(v1, v2, v3, v4, v5, v6, v7) DEFINE_PROP(7, v8)
+#define DEFINE_PROP9(v1, v2, v3, v4, v5, v6, v7, v8, v9) DEFINE_PROP8(v1, v2, v3, v4, v5, v6, v7, v8) DEFINE_PROP(8, v9)
+#define DEFINE_PROP10(v1, v2, v3, v4, v5, v6, v7, v8, v9, v10) DEFINE_PROP9(v1, v2, v3, v4, v5, v6, v7, v8, v9) DEFINE_PROP(9, v10)
+// clang-format on
 
 namespace Model
 {
@@ -54,9 +100,6 @@ template <typename... Types> class IModel
 {
   public:
     using props = std::tuple<Types...>;
-    using props_cref = std::tuple<std::add_lvalue_reference_t<std::add_const_t<Types>>...>;
-
-    virtual props_cref Props() const = 0;
 
     virtual void FromRecord(const QSqlRecord &aRecord) = 0;
     virtual QSqlRecord ToRecord() const = 0;

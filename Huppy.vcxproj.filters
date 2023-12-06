@@ -78,12 +78,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Model\App.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Category.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <QtMoc Include="Client\ClientSQL.h">
       <Filter>Header Files</Filter>
     </QtMoc>
@@ -99,13 +93,7 @@
     <ClInclude Include="Model\IModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Model\Link.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Magic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Model\Package.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Model\Types.h">
@@ -117,6 +105,9 @@
     <ClInclude Include="Utility\Obfuscate.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <QtMoc Include="Model\Category.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="debug\Main_qml.cpp">
@@ -154,5 +145,16 @@
     <QtRcc Include="Resources_qmlcache.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Model\App.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Model\Package.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Model\Link.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

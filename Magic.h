@@ -16,3 +16,21 @@
 #define PASTE8(func, v1, v2, v3, v4, v5, v6, v7, v8) PASTE1(func, v1) PASTE7(func, v2, v3, v4, v5, v6, v7, v8)
 #define PASTE9(func, v1, v2, v3, v4, v5, v6, v7, v8, v9) PASTE1(func, v1) PASTE8(func, v2, v3, v4, v5, v6, v7, v8, v9)
 // clang-format on
+
+template <typename> inline constexpr bool always_false = false;
+
+template <typename Type, typename TypeM> constexpr void Move(Type &aObject, TypeM &&aObjectM) noexcept
+{
+    if constexpr (std::is_move_assignable_v<TypeM>)
+    {
+        aObject = std::move(aObjectM);
+    }
+    else if constexpr (std::is_swappable_with_v<Type, TypeM>)
+    {
+        std::swap(aObject, aObjectM);
+    }
+    else
+    {
+        static_assert(always_false<TypeM>, "Type cannot be moved to or swapped with TypeM");
+    }
+}

@@ -46,7 +46,7 @@
     <ClCompile Include="Client\ClientSQL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Database.cpp">
+    <ClCompile Include="Utility\Database.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Client\FileDownloader.cpp">
@@ -61,10 +61,16 @@
     <ClCompile Include="Model\Link.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Magic.cpp">
+    <ClCompile Include="View\ListViewApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Magic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Obfuscate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Model\Package.cpp">
@@ -73,15 +79,18 @@
     <ClCompile Include="Model\Types.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Utility\Obfuscate.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="Model\App.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Model\Category.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <QtMoc Include="Client\ClientSQL.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Database.h">
+    <QtMoc Include="Utility\Database.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="Client\FileDownloader.h">
@@ -93,29 +102,29 @@
     <ClInclude Include="Model\IModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Magic.h">
+    <QtMoc Include="Model\Link.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="View\ListViewApp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="Utility\Magic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Utility\Obfuscate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="Model\Package.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <ClInclude Include="Model\Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <CustomBuild Include="pch.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <ClInclude Include="Utility\Obfuscate.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <QtMoc Include="Model\Category.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="debug\Main_qml.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="release\Main_qml.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
@@ -125,36 +134,22 @@
     <ClCompile Include="pch.h.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="debug\qmlcache_loader.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="release\qmlcache_loader.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <CustomBuild Include="debug\qmlcache_loader.cpp.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
-      <Filter>Generated Files</Filter>
-    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Main.qml">
+    <None Include="QML\AppDelegate.qml">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <QtRcc Include="Resources_qmlcache.qrc">
+    </None>
+    <None Include="QML\AppView.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="QML\Main.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="debug\qmake_qmake_immediate.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="Model\App.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="Model\Package.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="Model\Link.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
+    <QtRcc Include="release\qmake_qmake_immediate.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
   </ItemGroup>
 </Project>

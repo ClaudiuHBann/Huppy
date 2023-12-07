@@ -3,7 +3,7 @@
 #include <qsqlfield.h>
 #include <qsqlrecord.h>
 
-#include "Magic.h"
+#include "Utility/Magic.h"
 
 // from record
 #define FR_PROP(prop) prop = aRecord.value(#prop).value<decltype(prop)>();
@@ -36,7 +36,7 @@
 
 #define DEFINE_PROP_GET(name)                                                                                          \
   public:                                                                                                              \
-    inline decltype(auto) Get##name() const                                                                            \
+    constexpr const auto &Get##name() const                                                                            \
     {                                                                                                                  \
         return name;                                                                                                   \
     }

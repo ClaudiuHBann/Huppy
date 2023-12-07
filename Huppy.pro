@@ -9,30 +9,42 @@ PRECOMPILED_HEADER = pch.h
 
 HEADERS += pch.h \
            Huppy.h \
-           Magic.h \
-           Database.h \
-           Client\FileDownloader.h \
+\
            Client\ClientSQL.h \
+           Client\FileDownloader.h \
+\
+           View\ListViewApp.h \
+\
+           Utility\Magic.h \
+           Utility\Database.h \
            Utility\Obfuscate.h \
+\
+           Model\App.h \
+           Model\Link.h \
            Model\Types.h \
            Model\IModel.h \
-           Model\App.h \
-           Model\Category.h \
-           Model\Link.h \
-           Model\Package.h
+           Model\Package.h \
+           Model\Category.h
 
 SOURCES += Main.cpp \
            Huppy.cpp \
-           Magic.cpp \
-           Database.cpp \
-           Client\FileDownloader.cpp \
+\
            Client\ClientSQL.cpp \
+           Client\FileDownloader.cpp \
+\
+           View\ListViewApp.cpp \
+\
+           Utility\Magic.cpp \
+           Utility\Database.cpp \
            Utility\Obfuscate.cpp \
+\
+           Model\App.cpp \
+           Model\Link.cpp \
            Model\Types.cpp \
            Model\IModel.cpp \
-           Model\App.cpp \
-           Model\Category.cpp \
-           Model\Link.cpp \
-           Model\Package.cpp
+           Model\Package.cpp \
+           Model\Category.cpp
 
-RESOURCES += Resources.qrc
+RESOURCES += QML\AppDelegate.qml \
+             QML\AppView.qml \
+             QML\Main.qml

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file alias="QML/AppDelegate.qml">QML/AppDelegate.qml</file>
+        <file alias="QML/AppView.qml">QML/AppView.qml</file>
+        <file alias="QML/Main.qml">QML/Main.qml</file>
+    </qresource>
+</RCC>

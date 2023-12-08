@@ -12,6 +12,6 @@ class ClientSQL : public QObject
     ClientSQL(QObject *aParent);
 
   private:
-    Database mDatabase;
+    Utility::Database mDatabase;
 };
 } // namespace Client

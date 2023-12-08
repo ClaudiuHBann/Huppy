@@ -14,6 +14,8 @@ const auto DB_PASSWORD = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE
 const auto DB_DATABASE_NAME = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("Huppy")));
 } // namespace
 
+namespace Utility
+{
 Database::Database(QObject *aParent) : QObject(aParent), mDatabase(QSqlDatabase::addDatabase(DB_DRIVER))
 {
     Initialize();
@@ -31,3 +33,4 @@ void Database::Initialize()
     Q_ASSERT_X(mDatabase.open(DB_USER_NAME, DB_PASSWORD), "function",
                mDatabase.lastError().text().toLatin1().constData());
 }
+} // namespace Utility

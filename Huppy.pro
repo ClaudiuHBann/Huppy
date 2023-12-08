@@ -45,6 +45,6 @@ SOURCES += Main.cpp \
            Model\Package.cpp \
            Model\Category.cpp
 
-RESOURCES += QML\AppDelegate.qml \
-             QML\AppView.qml \
+RESOURCES += QML\DelegateApp.qml \
+             QML\ViewApp.qml \
              QML\Main.qml

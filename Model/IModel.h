@@ -120,7 +120,7 @@
 #define DEFINE_ARGS_ASSIGN(...) EXPAND(PASTE(DEFINE_ARG_ASSIGN, __VA_ARGS__))
 
 // arg1 = std::move(aarg1); arg2 = std::move(aarg2); ...
-#define DEFINE_ARG_ASSIGN_MOVE(prop) Move(prop, aObject.prop);
+#define DEFINE_ARG_ASSIGN_MOVE(prop) Utility::Move(prop, aObject.prop);
 #define DEFINE_ARGS_ASSIGN_MOVE(...) EXPAND(PASTE(DEFINE_ARG_ASSIGN_MOVE, __VA_ARGS__))
 
 #define DEFINE_MODEL_OPERATORS_ASSIGN(className, ...)                                                                  \

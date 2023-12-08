@@ -6,5 +6,8 @@ Window {
     width: 640; height: 480
     title: "Huppy"
 
-    AppView { anchors.fill: parent }
+    ViewApp {
+        id: viewApp
+        anchors.fill: parent
+    }
 }

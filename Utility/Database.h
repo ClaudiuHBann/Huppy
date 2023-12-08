@@ -3,6 +3,8 @@
 #include <QtSql/qsqldatabase.h>
 #include <QtSql/qsqlrelationaltablemodel.h>
 
+namespace Utility
+{
 class Database : public QObject
 {
     Q_OBJECT;
@@ -62,3 +64,4 @@ class Database : public QObject
 
     void Initialize();
 };
+} // namespace Utility

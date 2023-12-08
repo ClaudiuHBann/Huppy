@@ -125,6 +125,24 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="debug\QML_DelegateApp_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\QML_DelegateApp_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\QML_Main_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\QML_Main_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\QML_ViewApp_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\QML_ViewApp_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
@@ -134,21 +152,33 @@
     <ClCompile Include="pch.h.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="debug\qmlcache_loader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qmlcache_loader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\qmlcache_loader.cpp.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="QML\AppDelegate.qml">
+    <CustomBuild Include="QML\DelegateApp.qml">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="QML\AppView.qml">
+    </CustomBuild>
+    <CustomBuild Include="QML\Main.qml">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="QML\Main.qml">
+    </CustomBuild>
+    <CustomBuild Include="QML\ViewApp.qml">
       <Filter>Resource Files</Filter>
-    </None>
-    <QtRcc Include="debug\qmake_qmake_immediate.qrc">
+    </CustomBuild>
+    <QtRcc Include="debug_qmake_qmake_immediate_qmlcache.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <QtRcc Include="release\qmake_qmake_immediate.qrc">
+    <QtRcc Include="release_qmake_qmake_immediate_qmlcache.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
   </ItemGroup>

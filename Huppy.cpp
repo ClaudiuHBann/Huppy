@@ -3,9 +3,12 @@
 
 #include "View/ListViewApp.h"
 
-using namespace View;
+#define QML_REGISTER_TYPE(type) qmlRegisterType<type>(QML_HUPPY_URI, 1, 0, #type);
 
-constexpr auto PATH_QML_MAIN = "qrc:/QML/Main.qml";
+constexpr auto QML_HUPPY_URI = "Huppy.QML";
+constexpr auto QML_MAIN = "qrc:/QML/Main.qml";
+
+using namespace View;
 
 Huppy::Huppy(int &aArgc, char **aArgv)
     : mApp(aArgc, aArgv), mParent(mApp.parent()), mEngine(mParent), mClientSQL(mParent), mFileDownloader(mParent)
@@ -15,10 +18,15 @@ Huppy::Huppy(int &aArgc, char **aArgv)
 
 void Huppy::Initialize()
 {
-    qmlRegisterType<ListViewApp>("Huppy.QML.Types", 1, 0, "ListViewApp");
+    InitializeQML();
 
-    mEngine.load(PATH_QML_MAIN);
-    Q_ASSERT_X(!mEngine.rootObjects().isEmpty(), "function", mEngine.catchError().toString().toStdString().c_str());
+    mEngine.load(QML_MAIN);
+    Q_ASSERT_X(!mEngine.rootObjects().isEmpty(), "function", mEngine.catchError().toString().toLatin1().constData());
+}
+
+void Huppy::InitializeQML()
+{
+    QML_REGISTER_TYPE(ListViewApp);
 }
 
 int Huppy::Run()

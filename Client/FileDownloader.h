@@ -4,6 +4,7 @@
 #define QT_NO_SSL
 
 #include <QtNetwork/qnetworkreply.h>
+#include <qmutex.h>
 #include <qnetworkaccessmanager.h>
 
 namespace Client
@@ -24,8 +25,8 @@ class FileDownloader : public QObject
   private:
     QNetworkAccessManager mManager;
 
-    std::map<QNetworkReply *, QString> mURLToFile{};
-    std::mutex mMutexURLToFile;
+    QMap<QNetworkReply *, QString> mReplyToFile{};
+    QMutex mMutexURLToFile;
 
     void Initialize();
 };

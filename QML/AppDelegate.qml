@@ -3,8 +3,6 @@ import QtQuick.Layouts
 import QtQuick.Controls
 
 ItemDelegate {
-    id: delegate
-
     contentItem: RowLayout {
         spacing: 10
 

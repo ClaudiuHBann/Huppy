@@ -12,6 +12,7 @@ class Huppy
     Huppy(int &aArgc, char **aArgv);
 
     void Initialize();
+    void InitializeQML();
     int Run();
 
   private:

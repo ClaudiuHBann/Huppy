@@ -18,23 +18,23 @@ void FileDownloader::Download(const QUrl &aURL, const QString &aFile)
     QNetworkRequest request(aURL);
     auto reply = mManager.get(request);
 
-    scoped_lock lock(mMutexURLToFile);
-    mURLToFile[reply] = aFile;
+    QMutexLocker locker(&mMutexURLToFile);
+    mReplyToFile[reply] = aFile;
 }
 
 void FileDownloader::Downloaded(QNetworkReply *aReply)
 {
     aReply->deleteLater();
 
-    Q_ASSERT_X(!aReply->error() && aReply->isReadable(), "function", aReply->errorString().toStdString().c_str());
+    Q_ASSERT_X(!aReply->error() && aReply->isReadable(), "function", aReply->errorString().toLatin1().constData());
 
     QFile file;
     {
-        scoped_lock lock(mMutexURLToFile);
-        file.setFileName(mURLToFile[aReply]);
+        QMutexLocker locker(&mMutexURLToFile);
+        file.setFileName(mReplyToFile[aReply]);
     }
 
-    Q_ASSERT_X(file.open(QIODevice::WriteOnly), "function", file.errorString().toStdString().c_str());
+    Q_ASSERT_X(file.open(QIODevice::WriteOnly), "function", file.errorString().toLatin1().constData());
     file.write(aReply->readAll());
 }
 

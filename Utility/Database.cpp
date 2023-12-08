@@ -21,7 +21,7 @@ Database::Database(QObject *aParent) : QObject(aParent), mDatabase(QSqlDatabase:
 
 void Database::Initialize()
 {
-    Q_ASSERT_X(mDatabase.isValid(), "function", mDatabase.lastError().text().toStdString().c_str());
+    Q_ASSERT_X(mDatabase.isValid(), "function", mDatabase.lastError().text().toLatin1().constData());
 
     mDatabase.setHostName(DB_HOST_NAME);
     mDatabase.setPort(DB_HOST_PORT);
@@ -29,5 +29,5 @@ void Database::Initialize()
     mDatabase.setDatabaseName(DB_DATABASE_NAME);
 
     Q_ASSERT_X(mDatabase.open(DB_USER_NAME, DB_PASSWORD), "function",
-               mDatabase.lastError().text().toStdString().c_str());
+               mDatabase.lastError().text().toLatin1().constData());
 }

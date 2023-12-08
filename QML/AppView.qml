@@ -1,25 +1,13 @@
 ﻿import QtQuick
 import QtQuick.Controls
 
-import Huppy.QML.Types
+import Huppy.QML
 
 ListView {
-    id: listView
+    width: 320; height: 480
 
-    width: 320
-    height: 480
+    model: ListViewApp {}
+    delegate: AppDelegate {}
 
-    focus: true
-    boundsBehavior: Flickable.StopAtBounds
-
-    delegate: AppDelegate {
-        id: delegate
-        width: listView.width
-    }
-
-    model: ListViewApp {
-        id: appModel
-    }
-
-    ScrollBar.vertical: ScrollBar { }
+    ScrollBar.vertical: ScrollBar {}
 }

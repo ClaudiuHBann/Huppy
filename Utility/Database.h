@@ -25,14 +25,14 @@ class Database : public QObject
         relationalTableModel.setTable(modelName);
         relationalTableModel.setEditStrategy(QSqlRelationalTableModel::EditStrategy::OnManualSubmit);
         Q_ASSERT_X(relationalTableModel.insertRecord(-1, aModel.ToRecord()), "function",
-                   relationalTableModel.lastError().text().toStdString().c_str());
+                   relationalTableModel.lastError().text().toLatin1().constData());
         relationalTableModel.submitAll();
 
         return *this;
     }
 
     // TODO: make it look for the actual model property not the id from it
-    template <typename Model> std::vector<Model> SelectAll()
+    template <typename Model> QVector<Model> SelectAll()
     {
         static_assert(
             /*std::derived_from<Model, ::Model::IModel<props...>> &&*/ std::tuple_size_v<typename Model::props>,
@@ -44,9 +44,9 @@ class Database : public QObject
 
         QSqlTableModel tableModel(this, mDatabase);
         tableModel.setTable(modelName);
-        Q_ASSERT_X(tableModel.select(), "function", tableModel.lastError().text().toStdString().c_str());
+        Q_ASSERT_X(tableModel.select(), "function", tableModel.lastError().text().toLatin1().constData());
 
-        vector<Model> models{};
+        QVector<Model> models{};
         for (int i = 0; i < tableModel.rowCount(); i++)
         {
             Model model{};

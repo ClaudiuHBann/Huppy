@@ -13,10 +13,10 @@ HEADERS += pch.h \
            Client\ClientSQL.h \
            Client\FileDownloader.h \
 \
+           View\ManagerView.h \
            View\ListViewApp.h \
 \
            Utility\Magic.h \
-           Utility\Database.h \
            Utility\Obfuscate.h \
 \
            Model\App.h \
@@ -32,10 +32,10 @@ SOURCES += Main.cpp \
            Client\ClientSQL.cpp \
            Client\FileDownloader.cpp \
 \
+           View\ManagerView.cpp \
            View\ListViewApp.cpp \
 \
            Utility\Magic.cpp \
-           Utility\Database.cpp \
            Utility\Obfuscate.cpp \
 \
            Model\App.cpp \

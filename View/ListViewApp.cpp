@@ -3,11 +3,11 @@
 
 namespace View
 {
-ListViewApp::ListViewApp(QObject *aParent /* = {} */) : QAbstractListModel(aParent)
+ListViewApp::ListViewApp(QObject *aParent) : QAbstractListModel(aParent)
 {
 }
 
-int ListViewApp::rowCount(const QModelIndex & /* = QModelIndex() */) const
+int ListViewApp::rowCount(const QModelIndex & /* = {} */) const
 {
     return mApps.count();
 }

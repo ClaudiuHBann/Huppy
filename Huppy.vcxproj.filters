@@ -117,13 +117,13 @@
     <QtMoc Include="Model\App.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Model\Package.h">
+    <QtMoc Include="Model\Category.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="Model\Link.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="Model\Category.h">
+    <QtMoc Include="Model\Package.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

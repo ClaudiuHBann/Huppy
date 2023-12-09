@@ -41,24 +41,11 @@
         return name;                                                                                                   \
     }
 
-#define DEFINE_PROP_ON_CHANGE(name)                                                                                    \
-  signals:                                                                                                             \
-    constexpr void OnChanged##name()                                                                                   \
-    {                                                                                                                  \
-    }
-
 #define DEFINE_PROP_SET(name)                                                                                          \
   public:                                                                                                              \
     inline decltype(auto) Set##name(const decltype(name) &a##name)                                                     \
     {                                                                                                                  \
-        if (name == a##name)                                                                                           \
-        {                                                                                                              \
-            return *this;                                                                                              \
-        }                                                                                                              \
-                                                                                                                       \
         name = a##name;                                                                                                \
-        emit OnChanged##name();                                                                                        \
-                                                                                                                       \
         return *this;                                                                                                  \
     }
 
@@ -66,10 +53,9 @@
   private:                                                                                                             \
     std::tuple_element_t<index, props> name{};                                                                         \
                                                                                                                        \
-    Q_PROPERTY(std::tuple_element_t<index, props> name READ Get##name WRITE Set##name NOTIFY OnChanged##name);         \
+    Q_PROPERTY(std::tuple_element_t<index, props> name READ Get##name WRITE Set##name);                                \
                                                                                                                        \
     DEFINE_PROP_GET(name);                                                                                             \
-    DEFINE_PROP_ON_CHANGE(name);                                                                                       \
     DEFINE_PROP_SET(name);
 
 // clang-format off
@@ -97,20 +83,18 @@
 
 #define DEFINE_MODEL_CONSTRUCTORS(className, ...)                                                                      \
   public:                                                                                                              \
-    className(QObject *aParent = {}) : QObject(aParent)                                                                \
+    constexpr className() noexcept = default;                                                                          \
+                                                                                                                       \
+    className(DEFINE_ARGS(__VA_ARGS__) const bool aDummy = true) : DEFINE_ARGS_INIT(__VA_ARGS__) IModel(aDummy)        \
     {                                                                                                                  \
     }                                                                                                                  \
                                                                                                                        \
-    className(DEFINE_ARGS(__VA_ARGS__) QObject *aParent = {}) : DEFINE_ARGS_INIT(__VA_ARGS__) QObject(aParent)         \
-    {                                                                                                                  \
-    }                                                                                                                  \
-                                                                                                                       \
-    className(const className &a##className) : QObject(a##className.parent())                                          \
+    className(const className &a##className)                                                                           \
     {                                                                                                                  \
         *this = a##className;                                                                                          \
     }                                                                                                                  \
                                                                                                                        \
-    className(className &&a##className) noexcept : QObject(a##className.parent())                                      \
+    className(className &&a##className) noexcept                                                                       \
     {                                                                                                                  \
         *this = std::move(a##className);                                                                               \
     }
@@ -141,6 +125,7 @@
 
 #define DEFINE_MODEL(className, ...)                                                                                   \
     DEFINE_PROPS(__VA_ARGS__);                                                                                         \
+    QML_VALUE_TYPE(className);                                                                                         \
                                                                                                                        \
     DEFINE_MODEL_FR(__VA_ARGS__);                                                                                      \
     DEFINE_MODEL_TR(__VA_ARGS__);                                                                                      \
@@ -155,6 +140,10 @@ template <typename... Types> class IModel
 {
   public:
     using props = std::tuple<Types...>;
+
+    constexpr IModel(const bool = true) noexcept
+    {
+    }
 
     virtual void FromRecord(const QSqlRecord &aRecord) = 0;
     virtual QSqlRecord ToRecord() const = 0;

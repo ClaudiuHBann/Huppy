@@ -38,8 +38,6 @@ void Huppy::InitializeTypes()
 
 void Huppy::InitializeQML()
 {
-    QML_REGISTER_COMPONENT(App);
-    QML_REGISTER_COMPONENT(Category);
     QML_REGISTER_COMPONENT(ListViewApp);
     QML_REGISTER_COMPONENT(ListViewCategory);
 }

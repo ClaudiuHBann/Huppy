@@ -6,9 +6,9 @@
 
 namespace Model
 {
-class Package : public QObject, public IModel<int, QUuid, QString>
+class Package : public IModel<int, QUuid, QString>
 {
-    Q_OBJECT;
+    Q_GADGET;
     DEFINE_MODEL(Package, id, uuid, apps);
 };
 } // namespace Model

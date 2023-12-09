@@ -4,9 +4,9 @@
 
 namespace Model
 {
-class Link : public QObject, public IModel<int, int, QString, QString, QString, QString>
+class Link : public IModel<int, int, QString, QString, QString, QString>
 {
-    Q_OBJECT;
+    Q_GADGET;
     DEFINE_MODEL(Link, id, app, url, format, os, arch);
 };
 } // namespace Model

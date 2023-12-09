@@ -145,6 +145,8 @@ template <typename... Types> class IModel
     {
     }
 
+    auto operator<=>(const IModel &) const = default;
+
     virtual void FromRecord(const QSqlRecord &aRecord) = 0;
     virtual QSqlRecord ToRecord() const = 0;
 };

@@ -1,13 +1,19 @@
 #include "pch.h"
 #include "ListViewCategory.h"
 
+using namespace Model;
+
 namespace View
 {
 ListViewCategory::ListViewCategory(QObject *aParent /* = {} */) : QAbstractListModel(aParent)
 {
-    mCategoryToApps.append({{69, "69", "420", 420}, {{69, 420, "proposed", false}, {69, 420, "proposed", false}}});
-    mCategoryToApps.append({{69, "69", "420", 420}, {{69, 420, "proposed", false}, {69, 420, "proposed", false}}});
-    mCategoryToApps.append({{69, "69", "420", 420}, {{69, 420, "proposed", false}, {69, 420, "proposed", false}}});
+    append({69, "69", "420", 420}, {69, 420, "proposed", false});
+    append({69, "69", "420", 420}, {69, 420, "proposed", false});
+    append({69, "69", "420", 420}, {69, 420, "proposed", false});
+
+    append({420, "420", "69", 69}, {69, 420, "proposed", false});
+    append({420, "420", "69", 69}, {69, 420, "proposed", false});
+    append({420, "420", "69", 69}, {69, 420, "proposed", false});
 }
 
 int ListViewCategory::rowCount(const QModelIndex & /* = {} */) const
@@ -18,12 +24,12 @@ int ListViewCategory::rowCount(const QModelIndex & /* = {} */) const
 QPair<QVariant, QVariantList> ListViewCategory::GetCTAS(int row) const
 {
     QVariantList apps{};
-    for (const auto &app : mCategoryToApps[row].second)
+    for (const auto &app : mCategoryToApps[mCategoryToApps.keys()[row]])
     {
         apps.append(QVariant::fromValue(app));
     }
 
-    return {QVariant::fromValue(mCategoryToApps[row].first), apps};
+    return {QVariant::fromValue(mCategoryToApps.keys()[row]), apps};
 }
 
 QVariant ListViewCategory::data(const QModelIndex &index, int role /* = Qt::UserRole */) const
@@ -36,7 +42,7 @@ QVariant ListViewCategory::data(const QModelIndex &index, int role /* = Qt::User
     switch (role)
     {
     case RoleCategory:
-        return QVariant::fromValue(mCategoryToApps[index.row()].first);
+        return QVariant::fromValue(mCategoryToApps.keys()[index.row()]);
 
     case RoleApps:
         return GetCTAS(index.row()).second;
@@ -57,34 +63,29 @@ QVariantMap ListViewCategory::get(int row) const
     return {{"category", ctas.first}, {"apps", ctas.second}};
 }
 
-void ListViewCategory::append(const CategoryToApp & /*aCategoryToApp*/)
+void ListViewCategory::append(const Category &aCategory, const App &aApp)
 {
     beginInsertRows({}, mCategoryToApps.count(), mCategoryToApps.count());
-
-    // TODO: implement me
-    // const auto it = std::ranges::find_if(mCategoryToApps,
-    //[&](const auto &aPair) { return aPair.first == aCategoryToApp.category; });
-    // it->second.append(aCategoryToApp.app);
-
+    mCategoryToApps[aCategory] += aApp;
     endInsertRows();
 }
 
-void ListViewCategory::set(int row, const CategoryToApp & /*aCategoryToApp*/)
+void ListViewCategory::set(int row, const Model::Category &aCategory, const Model::App &aApp)
 {
     if (row < 0 || row >= mCategoryToApps.count())
     {
         return;
     }
 
-    // TODO: implement me
-    // const auto it = std::ranges::find_if(mCategoryToApps,
-    //[&](const auto &aPair) { return aPair.first == aCategoryToApp.category; });
-    // it->second.replace(row, aCategoryToApp.app);
-    //  TODO: update only the roles that changed
+    // TODO: is this right?
+    const auto it = std::ranges::find_if(mCategoryToApps[aCategory],
+                                         [&](const auto &aAppIn) { return aAppIn.Getid() == aApp.Getid(); });
+    *it = aApp;
+    // TODO: update only the roles that changed
     dataChanged(index(row, 0), index(row, 0), {RoleCategory, RoleApps});
 }
 
-void ListViewCategory::remove(int row)
+void ListViewCategory::remove(int row, const Model::Category &aCategory, const Model::App &aApp)
 {
     if (row < 0 || row >= mCategoryToApps.count())
     {
@@ -92,8 +93,7 @@ void ListViewCategory::remove(int row)
     }
 
     beginRemoveRows({}, row, row);
-    // TODO: this is bad
-    mCategoryToApps.removeAt(row);
+    mCategoryToApps[aCategory].removeOne(aApp);
     endRemoveRows();
 }
 } // namespace View

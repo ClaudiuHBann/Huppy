@@ -12,12 +12,6 @@ class ListViewCategory : public QAbstractListModel
     Q_OBJECT;
 
   public:
-    struct CategoryToApp
-    {
-        Model::Category category{};
-        Model::App app{};
-    };
-
     enum CategoryRole
     {
         RoleCategory = Qt::UserRole,
@@ -32,12 +26,12 @@ class ListViewCategory : public QAbstractListModel
     QHash<int, QByteArray> roleNames() const;
 
     Q_INVOKABLE QVariantMap get(int row) const;
-    Q_INVOKABLE void append(const CategoryToApp &aCategoryToApp);
-    Q_INVOKABLE void set(int row, const CategoryToApp &aCategoryToApp);
-    Q_INVOKABLE void remove(int row);
+    Q_INVOKABLE void append(const Model::Category &aCategory, const Model::App &aApp);
+    Q_INVOKABLE void set(int row, const Model::Category &aCategory, const Model::App &aApp);
+    Q_INVOKABLE void remove(int row, const Model::Category &aCategory, const Model::App &aApp);
 
   private:
-    QList<QPair<Model::Category, QList<Model::App>>> mCategoryToApps;
+    QMap<Model::Category, QList<Model::App>> mCategoryToApps;
 
     QPair<QVariant, QVariantList> GetCTAS(int row) const;
 };

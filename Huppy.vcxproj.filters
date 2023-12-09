@@ -79,14 +79,11 @@
     <ClCompile Include="View\ManagerView.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="View\ListViewCategory.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="Model\App.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="Model\Category.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="Client\ClientSQL.h">
       <Filter>Header Files</Filter>
     </QtMoc>
@@ -96,12 +93,6 @@
     <ClInclude Include="Huppy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Model\IModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <QtMoc Include="Model\Link.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="View\ListViewApp.h">
       <Filter>Header Files</Filter>
     </QtMoc>
@@ -111,9 +102,6 @@
     <ClInclude Include="Utility\Obfuscate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <QtMoc Include="Model\Package.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <ClInclude Include="Model\Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -122,6 +110,21 @@
     </CustomBuild>
     <QtMoc Include="View\ManagerView.h">
       <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="View\ListViewCategory.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Model\App.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Model\Package.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Model\Link.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Model\Category.h">
+      <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
@@ -151,5 +154,12 @@
     <QtRcc Include="release\qmake_qmake_immediate.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+    <None Include="QML\DelegateCategory.qml" />
+    <None Include="QML\ViewCategory.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model\IModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

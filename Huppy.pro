@@ -15,6 +15,7 @@ HEADERS += pch.h \
 \
            View\ManagerView.h \
            View\ListViewApp.h \
+           View\ListViewCategory.h \
 \
            Utility\Magic.h \
            Utility\Obfuscate.h \
@@ -34,6 +35,7 @@ SOURCES += Main.cpp \
 \
            View\ManagerView.cpp \
            View\ListViewApp.cpp \
+           View\ListViewCategory.cpp \
 \
            Utility\Magic.cpp \
            Utility\Obfuscate.cpp \
@@ -46,5 +48,9 @@ SOURCES += Main.cpp \
            Model\Category.cpp
 
 RESOURCES += QML\DelegateApp.qml \
+             QML\DelegateCategory.qml \
+\
              QML\ViewApp.qml \
+             QML\ViewCategory.qml \
+\
              QML\Main.qml

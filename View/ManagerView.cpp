@@ -14,17 +14,17 @@ ManagerView::ManagerView(QQmlApplicationEngine &aEngine, Client::ClientSQL &aCli
 
 void ManagerView::InitializeApps()
 {
-    const auto apps = mClientSQL.SelectAll<App>();
+    auto apps = mClientSQL.SelectAll<App>();
     for (const auto &category : mClientSQL.SelectAll<Category>())
     {
-        for (const auto &app : apps)
+        for (auto &app : apps)
         {
             if (category.Getid() != app.Getcategory())
             {
                 continue;
             }
 
-            mCategoryToApps[category.Getname()] += app;
+            mCategoryToApps[category.Getname()] += std::move(app);
         }
     }
 }
@@ -32,8 +32,12 @@ void ManagerView::InitializeApps()
 void ManagerView::Initialize()
 {
     const auto root = mEngine.rootObjects().first();
-    const auto viewApp = root->findChild<QObject *>("viewApp", Qt::FindDirectChildrenOnly);
-    mListViewApp = viewApp->findChild<decltype(mListViewApp)>("listViewApp", Qt::FindDirectChildrenOnly);
+    const auto viewCategory = root->findChild<QObject *>("viewCategory", Qt::FindDirectChildrenOnly);
+    mListViewCategory =
+        viewCategory->findChild<decltype(mListViewCategory)>("listViewCategory", Qt::FindDirectChildrenOnly);
+    // const auto delegateCategory = viewCategory->findChild<QObject *>("delegateCategory");
+    // mListViewCategory =
+    // delegateCategory->findChild<decltype(mListViewCategory)>("listViewCategory", Qt::FindDirectChildrenOnly);
 
     InitializeApps();
 }

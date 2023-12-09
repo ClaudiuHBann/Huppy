@@ -25,10 +25,13 @@ QVariant ListViewApp::data(const QModelIndex &index, int role /* = Qt::UserRole 
     {
     case RoleID:
         return mApps.at(index.row()).Getid();
+
     case RoleCategory:
         return mApps.at(index.row()).Getcategory();
+
     case RoleName:
         return mApps.at(index.row()).Getname();
+
     case RoleProposed:
         return mApps.at(index.row()).Getproposed();
 

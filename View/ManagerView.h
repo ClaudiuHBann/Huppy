@@ -3,9 +3,9 @@
 #include <qqmlapplicationengine.h>
 
 #include "Client/ClientSQL.h"
-#include "ListViewApp.h"
 
-#include "Model/Category.h"
+#include "ListViewApp.h"
+#include "ListViewCategory.h"
 
 namespace View
 {
@@ -24,6 +24,7 @@ class ManagerView : public QObject
     Client::ClientSQL &mClientSQL;
 
     ListViewApp *mListViewApp{};
+    ListViewCategory *mListViewCategory{};
 
     QMap<QString, QList<Model::App>> mCategoryToApps{};
 };

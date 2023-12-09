@@ -199,6 +199,12 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="View\ListViewCategory.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
     <ClCompile Include="View\ManagerView.cpp" />
     <ClCompile Include="Model\App.cpp" />
     <ClCompile Include="Model\Category.cpp" />
@@ -221,6 +227,7 @@
     <QtMoc Include="Client\FileDownloader.h" />
     <ClInclude Include="Huppy.h" />
     <QtMoc Include="View\ManagerView.h" />
+    <QtMoc Include="View\ListViewCategory.h" />
     <ClInclude Include="Model\IModel.h" />
     <QtMoc Include="Model\Link.h" />
     <QtMoc Include="View\ListViewApp.h" />
@@ -324,9 +331,11 @@ echo #include "pch.h"&gt;&gt;pch.h.cpp</Command>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QML\DelegateCategory.qml" />
     <None Include="QML\DelegateApp.qml" />
     <None Include="QML\ViewApp.qml" />
     <None Include="QML\Main.qml" />
+    <None Include="QML\ViewCategory.qml" />
     <QtRcc Include="debug\qmake_qmake_immediate.qrc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmake_qmake_immediate</InitFuncName>

@@ -6,9 +6,9 @@ Window {
     width: 640; height: 480
     title: "Huppy"
 
-    ViewApp {
-        id: viewApp
-        objectName: "viewApp"
+    ViewCategory {
+        id: viewCategory
+        objectName: "viewCategory"
         anchors.fill: parent
     }
 }

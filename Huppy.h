@@ -15,6 +15,8 @@ class Huppy
 
     void Initialize();
     void InitializeQML();
+    void InitializeTypes();
+
     int Run();
 
   private:

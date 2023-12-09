@@ -2,7 +2,9 @@
 <RCC version="1.0">
     <qresource prefix="/">
         <file alias="QML/DelegateApp.qml">QML/DelegateApp.qml</file>
+        <file alias="QML/DelegateCategory.qml">QML/DelegateCategory.qml</file>
         <file alias="QML/ViewApp.qml">QML/ViewApp.qml</file>
+        <file alias="QML/ViewCategory.qml">QML/ViewCategory.qml</file>
         <file alias="QML/Main.qml">QML/Main.qml</file>
     </qresource>
 </RCC>

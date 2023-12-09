@@ -89,8 +89,7 @@
       <PrecompiledHeaderOutputFile>$(IntDir)\Huppy.pch</PrecompiledHeaderOutputFile>
       <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
-      <ProgramDataBaseFileName>
-      </ProgramDataBaseFileName>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -130,8 +129,9 @@
       <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
     </QtMoc>
     <QtRcc>
-      <NoZstd>true</NoZstd>
+      <InitFuncName>release_qmake_qmake_immediate_qmlcache</InitFuncName>
       <Compression>default</Compression>
+      <NoZstd>true</NoZstd>
       <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
       <QtRccDir>$(Configuration)</QtRccDir>
       <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
@@ -182,6 +182,14 @@
     <ResourceCompile>
       <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
+    <QtRcc>
+      <InitFuncName>debug_qmake_qmake_immediate_qmlcache</InitFuncName>
+      <NoZstd>true</NoZstd>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
     <QtMoc>
       <CompilerFlavor>msvc</CompilerFlavor>
       <Include>C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/$(Configuration)/moc_predefs.h</Include>
@@ -190,22 +198,8 @@
       <QtMocDir>$(Configuration)</QtMocDir>
       <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
     </QtMoc>
-    <QtRcc>
-      <Compression>default</Compression>
-      <NoZstd>true</NoZstd>
-      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
-      <QtRccDir>$(Configuration)</QtRccDir>
-      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
-    </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="View\ListViewCategory.cpp">
-      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
-      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
-      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
-      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
-    </ClCompile>
-    <ClCompile Include="View\ManagerView.cpp" />
     <ClCompile Include="Model\App.cpp" />
     <ClCompile Include="Model\Category.cpp" />
     <ClCompile Include="Client\ClientSQL.cpp" />
@@ -214,8 +208,10 @@
     <ClCompile Include="Model\IModel.cpp" />
     <ClCompile Include="Model\Link.cpp" />
     <ClCompile Include="View\ListViewApp.cpp" />
+    <ClCompile Include="View\ListViewCategory.cpp" />
     <ClCompile Include="Utility\Magic.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="View\ManagerView.cpp" />
     <ClCompile Include="Utility\Obfuscate.cpp" />
     <ClCompile Include="Model\Package.cpp" />
     <ClCompile Include="Model\Types.cpp" />
@@ -226,12 +222,12 @@
     <QtMoc Include="Client\ClientSQL.h" />
     <QtMoc Include="Client\FileDownloader.h" />
     <ClInclude Include="Huppy.h" />
-    <QtMoc Include="View\ManagerView.h" />
-    <QtMoc Include="View\ListViewCategory.h" />
     <ClInclude Include="Model\IModel.h" />
     <QtMoc Include="Model\Link.h" />
     <QtMoc Include="View\ListViewApp.h" />
+    <QtMoc Include="View\ListViewCategory.h" />
     <ClInclude Include="Utility\Magic.h" />
+    <QtMoc Include="View\ManagerView.h" />
     <ClInclude Include="Utility\Obfuscate.h" />
     <QtMoc Include="Model\Package.h" />
     <ClInclude Include="Model\Types.h" />
@@ -305,6 +301,36 @@ echo #include "pch.h"&gt;&gt;pch.h.cpp</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="debug\QML_DelegateApp_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\QML_DelegateApp_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\QML_DelegateCategory_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\QML_DelegateCategory_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\QML_Main_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\QML_Main_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\QML_ViewApp_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\QML_ViewApp_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\QML_ViewCategory_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\QML_ViewCategory_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <FileType>Document</FileType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -329,20 +355,90 @@ echo #include "pch.h"&gt;&gt;pch.h.cpp</Command>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="debug\qmlcache_loader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qmlcache_loader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\qmlcache_loader.cpp.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qmake_qmake_immediate.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource-file-mapping="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/qmake_qmake_immediate.qrc=C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug_qmake_qmake_immediate_qmlcache.qrc" -o debug\qmlcache_loader.cpp debug\qmake_qmake_immediate.qrc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachengen_loader debug/qmlcache_loader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qmlcache_loader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qmake_qmake_immediate.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource-file-mapping="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/qmake_qmake_immediate.qrc=C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release_qmake_qmake_immediate_qmlcache.qrc" -o release\qmlcache_loader.cpp release\qmake_qmake_immediate.qrc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachengen_loader release/qmlcache_loader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qmlcache_loader.cpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="QML\DelegateCategory.qml" />
-    <None Include="QML\DelegateApp.qml" />
-    <None Include="QML\ViewApp.qml" />
-    <None Include="QML\Main.qml" />
-    <None Include="QML\ViewCategory.qml" />
-    <QtRcc Include="debug\qmake_qmake_immediate.qrc">
+    <CustomBuild Include="QML\DelegateApp.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QML\DelegateApp.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/qmake_qmake_immediate.qrc" -o release\QML_DelegateApp_qml.cpp QML\DelegateApp.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen QML/DelegateApp.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\QML_DelegateApp_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QML\DelegateApp.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/qmake_qmake_immediate.qrc" -o debug\QML_DelegateApp_qml.cpp QML\DelegateApp.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen QML/DelegateApp.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\QML_DelegateApp_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="QML\DelegateCategory.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QML\DelegateCategory.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/qmake_qmake_immediate.qrc" -o release\QML_DelegateCategory_qml.cpp QML\DelegateCategory.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen QML/DelegateCategory.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\QML_DelegateCategory_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QML\DelegateCategory.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/qmake_qmake_immediate.qrc" -o debug\QML_DelegateCategory_qml.cpp QML\DelegateCategory.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen QML/DelegateCategory.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\QML_DelegateCategory_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="QML\Main.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QML\Main.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/qmake_qmake_immediate.qrc" -o release\QML_Main_qml.cpp QML\Main.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen QML/Main.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\QML_Main_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QML\Main.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/qmake_qmake_immediate.qrc" -o debug\QML_Main_qml.cpp QML\Main.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen QML/Main.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\QML_Main_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="QML\ViewApp.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QML\ViewApp.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/qmake_qmake_immediate.qrc" -o release\QML_ViewApp_qml.cpp QML\ViewApp.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen QML/ViewApp.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\QML_ViewApp_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QML\ViewApp.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/qmake_qmake_immediate.qrc" -o debug\QML_ViewApp_qml.cpp QML\ViewApp.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen QML/ViewApp.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\QML_ViewApp_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="QML\ViewCategory.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QML\ViewCategory.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/release/qmake_qmake_immediate.qrc" -o release\QML_ViewCategory_qml.cpp QML\ViewCategory.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen QML/ViewCategory.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\QML_ViewCategory_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QML\ViewCategory.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource="C:/Users/Claudiu HBann/Desktop/Projects/C++/Huppy/debug/qmake_qmake_immediate.qrc" -o debug\QML_ViewCategory_qml.cpp QML\ViewCategory.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen QML/ViewCategory.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\QML_ViewCategory_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <QtRcc Include="debug_qmake_qmake_immediate_qmlcache.qrc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmake_qmake_immediate</InitFuncName>
     </QtRcc>
-    <QtRcc Include="release\qmake_qmake_immediate.qrc">
+    <QtRcc Include="release_qmake_qmake_immediate_qmlcache.qrc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmake_qmake_immediate</InitFuncName>
     </QtRcc>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -7,7 +7,6 @@
 #include "View/ManagerView.h"
 
 #define QML_REGISTER_TYPE(type) qmlRegisterType<type>(QML_HUPPY_URI, 1, 0, #type);
-#define QML_REGISTER_TYPE_META(type) qRegisterMetaType<type>(#type);
 #define QML_REGISTER_TYPE_SINGLETON(type) qmlRegisterSingletonType<type>(QML_HUPPY_URI, 1, 0, #type, &type::Initialize);
 
 constexpr auto QML_HUPPY_URI = "Huppy.QML";
@@ -26,9 +25,6 @@ void Huppy::Initialize()
 {
     QML_REGISTER_TYPE(ListViewApp);
     QML_REGISTER_TYPE(ListViewCategory);
-
-    QML_REGISTER_TYPE_META(App);
-    QML_REGISTER_TYPE_META(Category);
 
     QML_REGISTER_TYPE_SINGLETON(ManagerView);
 

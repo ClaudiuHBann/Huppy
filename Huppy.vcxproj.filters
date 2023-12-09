@@ -61,10 +61,16 @@
     <ClCompile Include="View\ListViewApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="View\ListViewCategory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Utility\Magic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="View\ManagerView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Utility\Obfuscate.cpp">
@@ -76,14 +82,14 @@
     <ClCompile Include="Model\Types.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="View\ManagerView.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
-    <ClCompile Include="View\ListViewCategory.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="Model\App.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Model\Category.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <QtMoc Include="Client\ClientSQL.h">
       <Filter>Header Files</Filter>
     </QtMoc>
@@ -93,41 +99,68 @@
     <ClInclude Include="Huppy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Model\IModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="Model\Link.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <QtMoc Include="View\ListViewApp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="View\ListViewCategory.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <ClInclude Include="Utility\Magic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <QtMoc Include="View\ManagerView.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <ClInclude Include="Utility\Obfuscate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <QtMoc Include="Model\Package.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <ClInclude Include="Model\Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <CustomBuild Include="pch.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <QtMoc Include="View\ManagerView.h">
-      <Filter>Generated Files</Filter>
-    </QtMoc>
-    <QtMoc Include="View\ListViewCategory.h">
-      <Filter>Generated Files</Filter>
-    </QtMoc>
-    <QtMoc Include="Model\App.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="Model\Category.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="Model\Link.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="Model\Package.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="debug\QML_DelegateApp_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\QML_DelegateApp_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\QML_DelegateCategory_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\QML_DelegateCategory_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\QML_Main_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\QML_Main_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\QML_ViewApp_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\QML_ViewApp_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\QML_ViewCategory_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\QML_ViewCategory_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
@@ -137,29 +170,40 @@
     <ClCompile Include="pch.h.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="debug\qmlcache_loader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qmlcache_loader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\qmlcache_loader.cpp.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="QML\DelegateApp.qml">
+    <CustomBuild Include="QML\DelegateApp.qml">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="QML\ViewApp.qml">
+    </CustomBuild>
+    <CustomBuild Include="QML\DelegateCategory.qml">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="QML\Main.qml">
+    </CustomBuild>
+    <CustomBuild Include="QML\Main.qml">
       <Filter>Resource Files</Filter>
-    </None>
-    <QtRcc Include="debug\qmake_qmake_immediate.qrc">
+    </CustomBuild>
+    <CustomBuild Include="QML\ViewApp.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QML\ViewCategory.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <QtRcc Include="debug_qmake_qmake_immediate_qmlcache.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <QtRcc Include="release\qmake_qmake_immediate.qrc">
+    <QtRcc Include="release_qmake_qmake_immediate_qmlcache.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <None Include="QML\DelegateCategory.qml" />
-    <None Include="QML\ViewCategory.qml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Model\IModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

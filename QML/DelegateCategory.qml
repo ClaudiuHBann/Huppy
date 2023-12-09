@@ -10,10 +10,6 @@ ItemDelegate {
 
         Label { text: category.name }
 
-        ViewApp {
-            id: viewApp
-            objectName: "viewApp"
-            model: apps
-        }
+        ViewApp { model: apps }
     }
 }

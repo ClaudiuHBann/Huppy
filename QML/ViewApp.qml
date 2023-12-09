@@ -6,11 +6,7 @@ import Huppy.QML
 ListView {
     width: 320; height: 480
 
-    model: ListViewApp {
-        id: listViewApp
-        objectName: "listViewApp"
-    }
-
+    model: ListViewApp {}
     delegate: DelegateApp {}
 
     ScrollBar.vertical: ScrollBar {}

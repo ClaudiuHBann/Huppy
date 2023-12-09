@@ -6,16 +6,12 @@
 #include "Client/ClientSQL.h"
 #include "Client/FileDownloader.h"
 
-#include "View/ManagerView.h"
-
 class Huppy
 {
   public:
     Huppy(int &aArgc, char **aArgv);
 
     void Initialize();
-    void InitializeQML();
-    void InitializeTypes();
 
     int Run();
 
@@ -25,6 +21,4 @@ class Huppy
 
     Client::ClientSQL mClientSQL;
     Client::FileDownloader mFileDownloader;
-
-    View::ManagerView mManagerView;
 };

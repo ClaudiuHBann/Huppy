@@ -8,13 +8,13 @@ ListView {
 
     model: ListViewCategory {
         id: listViewCategory
-        objectName: "listViewCategory"
-    }
 
-    delegate: DelegateCategory {
-        id: delegateCategory
-        objectName: "delegateCategory"
+        Component.onCompleted: {
+            ManagerView.GetListViewCategory(listViewCategory);
+        }
     }
+    
+    delegate: DelegateCategory {}
 
     ScrollBar.vertical: ScrollBar {}
 }

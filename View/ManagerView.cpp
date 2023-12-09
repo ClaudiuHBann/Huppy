@@ -7,15 +7,10 @@ using namespace Model;
 
 namespace View
 {
-ManagerView::ManagerView(QQmlApplicationEngine &aEngine, Client::ClientSQL &aClientSQL, QObject *aParent)
-    : QObject(aParent), mEngine(aEngine), mClientSQL(aClientSQL)
-{
-}
-
 void ManagerView::InitializeApps()
 {
-    auto apps = mClientSQL.SelectAll<App>();
-    for (const auto &category : mClientSQL.SelectAll<Category>())
+    auto apps = mClientSQL->SelectAll<App>();
+    for (const auto &category : mClientSQL->SelectAll<Category>())
     {
         for (auto &app : apps)
         {
@@ -24,21 +19,31 @@ void ManagerView::InitializeApps()
                 continue;
             }
 
-            mCategoryToApps[category.Getname()] += std::move(app);
+            mListViewCategory->append(category, app);
         }
     }
 }
 
-void ManagerView::Initialize()
+/* static */ ManagerView *ManagerView::Instance()
 {
-    const auto root = mEngine.rootObjects().first();
-    const auto viewCategory = root->findChild<QObject *>("viewCategory", Qt::FindDirectChildrenOnly);
-    mListViewCategory =
-        viewCategory->findChild<decltype(mListViewCategory)>("listViewCategory", Qt::FindDirectChildrenOnly);
-    // const auto delegateCategory = viewCategory->findChild<QObject *>("delegateCategory");
-    // mListViewCategory =
-    // delegateCategory->findChild<decltype(mListViewCategory)>("listViewCategory", Qt::FindDirectChildrenOnly);
+    QMutexLocker locker(&mMutex);
 
+    if (!mInstance)
+    {
+        mInstance = new ManagerView;
+    }
+
+    return mInstance;
+}
+
+void ManagerView::SetClientSQL(Client::ClientSQL &aClientSQL)
+{
+    mClientSQL = &aClientSQL;
     InitializeApps();
+}
+
+void ManagerView::GetListViewCategory(ListViewCategory *aListViewCategory)
+{
+    mListViewCategory = aListViewCategory;
 }
 } // namespace View

@@ -6,9 +6,5 @@ Window {
     width: 640; height: 480
     title: "Huppy"
 
-    ViewCategory {
-        id: viewCategory
-        objectName: "viewCategory"
-        anchors.fill: parent
-    }
+    ViewCategory { anchors.fill: parent }
 }

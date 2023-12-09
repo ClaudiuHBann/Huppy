@@ -7,13 +7,6 @@ namespace View
 {
 ListViewCategory::ListViewCategory(QObject *aParent /* = {} */) : QAbstractListModel(aParent)
 {
-    append({69, "69", "420", 420}, {69, 420, "proposed", false});
-    append({69, "69", "420", 420}, {69, 420, "proposed", false});
-    append({69, "69", "420", 420}, {69, 420, "proposed", false});
-
-    append({420, "420", "69", 69}, {69, 420, "proposed", false});
-    append({420, "420", "69", 69}, {69, 420, "proposed", false});
-    append({420, "420", "69", 69}, {69, 420, "proposed", false});
 }
 
 int ListViewCategory::rowCount(const QModelIndex & /* = {} */) const

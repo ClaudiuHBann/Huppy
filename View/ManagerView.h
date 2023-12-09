@@ -2,6 +2,8 @@
 
 #include <qqmlapplicationengine.h>
 
+#include <qmutex.h>
+
 #include "Client/ClientSQL.h"
 
 #include "ListViewApp.h"
@@ -12,20 +14,28 @@ namespace View
 class ManagerView : public QObject
 {
     Q_OBJECT;
+    QML_ELEMENT;
+    QML_SINGLETON;
 
   public:
-    ManagerView(QQmlApplicationEngine &aEngine, Client::ClientSQL &aClientSQL, QObject *aParent);
+    static ManagerView *Instance();
+    static QObject *Initialize(QQmlEngine *, QJSEngine *)
+    {
+        return Instance();
+    }
 
-    void Initialize();
-    void InitializeApps();
+    void SetClientSQL(Client::ClientSQL &aClientSQL);
+
+    Q_INVOKABLE void GetListViewCategory(ListViewCategory *aListViewCategory);
 
   private:
-    QQmlApplicationEngine &mEngine;
-    Client::ClientSQL &mClientSQL;
+    static inline QMutex mMutex{};
+    static inline ManagerView *mInstance{};
 
-    ListViewApp *mListViewApp{};
+    Client::ClientSQL *mClientSQL{};
+
     ListViewCategory *mListViewCategory{};
 
-    QMap<QString, QList<Model::App>> mCategoryToApps{};
+    void InitializeApps();
 };
 } // namespace View

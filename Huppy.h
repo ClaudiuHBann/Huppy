@@ -6,6 +6,8 @@
 #include "Client/ClientSQL.h"
 #include "Client/FileDownloader.h"
 
+#include "View/ManagerView.h"
+
 class Huppy
 {
   public:
@@ -17,9 +19,10 @@ class Huppy
 
   private:
     QGuiApplication mApp;
-    QObject *mParent{};
     QQmlApplicationEngine mEngine{};
 
     Client::ClientSQL mClientSQL;
     Client::FileDownloader mFileDownloader;
+
+    View::ManagerView mManagerView;
 };

@@ -8,6 +8,7 @@ Window {
 
     ViewApp {
         id: viewApp
+        objectName: "viewApp"
         anchors.fill: parent
     }
 }

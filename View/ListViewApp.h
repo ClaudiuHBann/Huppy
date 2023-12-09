@@ -20,7 +20,7 @@ class ListViewApp : public QAbstractListModel
     };
     Q_ENUM(AppRole)
 
-    ListViewApp(QObject *aParent);
+    ListViewApp(QObject *aParent = {});
 
     int rowCount(const QModelIndex & = {}) const;
     QVariant data(const QModelIndex &index, int role = Qt::UserRole) const;

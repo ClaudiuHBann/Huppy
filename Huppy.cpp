@@ -11,7 +11,8 @@ constexpr auto QML_MAIN = "qrc:/QML/Main.qml";
 using namespace View;
 
 Huppy::Huppy(int &aArgc, char **aArgv)
-    : mApp(aArgc, aArgv), mParent(mApp.parent()), mEngine(mParent), mClientSQL(mParent), mFileDownloader(mParent)
+    : mApp(aArgc, aArgv), mEngine(mApp.parent()), mClientSQL(mApp.parent()), mFileDownloader(mApp.parent()),
+      mManagerView(mEngine, mClientSQL, mApp.parent())
 {
     Initialize();
 }
@@ -22,6 +23,8 @@ void Huppy::Initialize()
 
     mEngine.load(QML_MAIN);
     Q_ASSERT_X(!mEngine.rootObjects().isEmpty(), "function", mEngine.catchError().toString().toLatin1().constData());
+
+    mManagerView.Initialize();
 }
 
 void Huppy::InitializeQML()

@@ -1,9 +1,11 @@
 #include "pch.h"
 #include "ListViewApp.h"
 
+// TODO: make some magic macros?
+
 namespace View
 {
-ListViewApp::ListViewApp(QObject *aParent) : QAbstractListModel(aParent)
+ListViewApp::ListViewApp(QObject *aParent /* = {} */) : QAbstractListModel(aParent)
 {
 }
 

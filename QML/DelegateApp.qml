@@ -12,5 +12,12 @@ ItemDelegate {
         Label { text: modelData.category }
         Label { text: modelData.name }
         Label { text: modelData.proposed }
+        
+        Image {
+            sourceSize.width: 50
+            sourceSize.height: 50
+            fillMode: Image.PreserveAspectFit
+            source: modelData.image
+        }
     }
 }

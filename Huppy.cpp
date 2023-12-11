@@ -9,8 +9,13 @@
 #define QML_REGISTER_TYPE(type) qmlRegisterType<type>(QML_HUPPY_URI, 1, 0, #type);
 #define QML_REGISTER_TYPE_SINGLETON(type) qmlRegisterSingletonType<type>(QML_HUPPY_URI, 1, 0, #type, &type::Initialize);
 
-constexpr auto QML_HUPPY_URI = "Huppy.QML";
+#ifdef _DEBUG
+constexpr auto QML_MAIN = R"(C:\Users\Claudiu HBann\Desktop\Projects\C++\Huppy\QML\Main.qml)";
+#else
 constexpr auto QML_MAIN = "qrc:/QML/Main.qml";
+#endif // _DEBUG
+
+constexpr auto QML_HUPPY_URI = "Huppy.QML";
 
 using namespace View;
 using namespace Model;

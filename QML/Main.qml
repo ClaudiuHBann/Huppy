@@ -19,4 +19,10 @@ Window {
             ManagerView.HotReload();
         }
     }
+
+    Component.onCompleted: {
+            window.flags = Qt.Window | Qt.WindowTitleHint |
+                           Qt.WindowMinimizeButtonHint | Qt.WindowMaximizeButtonHint | Qt.WindowCloseButtonHint |
+                           Qt.WindowStaysOnTopHint;
+        }
 }

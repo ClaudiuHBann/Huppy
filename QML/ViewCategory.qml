@@ -4,6 +4,9 @@ import QtQuick.Controls
 import Huppy.QML
 
 ListView {
+    anchors.fill: parent
+    boundsBehavior: Flickable.StopAtBounds
+
     model: ListViewCategory {
         id: listViewCategory
 
@@ -13,6 +16,5 @@ ListView {
     }
     
     delegate: DelegateCategory {}
-
     ScrollBar.vertical: ScrollBar {}
 }

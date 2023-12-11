@@ -5,11 +5,19 @@ import QtQuick.Controls
 import Huppy.QML
 
 ItemDelegate {
-    contentItem: RowLayout {
-        spacing: 10
+    width: parent.width
 
-        Label { text: category.name }
+    contentItem: ColumnLayout {
+        anchors.fill: parent
 
-        ViewApp { model: apps }
+        Label {
+            text: category.name
+            font.pixelSize: 22
+        }
+
+        ViewApp {
+            width: parent.width; height: 100
+            model: apps
+        }
     }
 }

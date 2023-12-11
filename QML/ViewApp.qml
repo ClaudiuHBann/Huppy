@@ -4,10 +4,11 @@ import QtQuick.Controls
 import Huppy.QML
 
 ListView {
-    width: 320; height: 480
+    orientation: Qt.Horizontal
+    boundsBehavior: Flickable.StopAtBounds
+    spacing: 15
 
     model: ListViewApp {}
     delegate: DelegateApp {}
-
-    ScrollBar.vertical: ScrollBar {}
+    ScrollBar.horizontal: ScrollBar {}
 }

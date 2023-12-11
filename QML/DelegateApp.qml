@@ -5,19 +5,40 @@ import QtQuick.Controls
 import Huppy.QML
 
 ItemDelegate {
-    contentItem: RowLayout {
-        spacing: 10
+    width: 150
+    height: 100
 
-        Label { text: modelData.id }
-        Label { text: modelData.category }
-        Label { text: modelData.name }
-        Label { text: modelData.proposed }
+    contentItem: Rectangle {
+        anchors.fill: parent
+
+        ColumnLayout {
+            anchors.fill: parent
         
-        Image {
-            sourceSize.width: 50
-            sourceSize.height: 50
-            fillMode: Image.PreserveAspectFit
-            source: modelData.image
+            Label {
+                text: modelData.name
+                font.pixelSize: 18
+                
+                Layout.fillWidth: true
+                horizontalAlignment: Qt.AlignHCenter
+            }
+            
+            Image {
+                source: modelData.image
+                sourceSize.width: 50
+        
+                fillMode: Image.PreserveAspectFit
+                
+                Layout.fillWidth: true
+                horizontalAlignment: Qt.AlignHCenter
+            }
+        }
+        
+        MouseArea {
+            anchors.fill: parent
+        
+            onClicked: {
+                parent.color = "#00A550";
+            }
         }
     }
 }

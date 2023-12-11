@@ -42,8 +42,18 @@ void ManagerView::SetClientSQL(Client::ClientSQL &aClientSQL)
     InitializeApps();
 }
 
+void ManagerView::SetHotReload(const std::function<void()> &aHotReload)
+{
+    mHotReload = aHotReload;
+}
+
 void ManagerView::GetListViewCategory(ListViewCategory *aListViewCategory)
 {
     mListViewCategory = aListViewCategory;
+}
+
+void ManagerView::HotReload()
+{
+    mHotReload();
 }
 } // namespace View

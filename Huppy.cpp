@@ -28,10 +28,25 @@ void Huppy::Initialize()
 
     QML_REGISTER_TYPE_SINGLETON(ManagerView);
 
-    mEngine.load(QML_MAIN);
-    Q_ASSERT_X(!mEngine.rootObjects().isEmpty(), "function", mEngine.catchError().toString().toLatin1().constData());
+    Load();
 
     ManagerView::Instance()->SetClientSQL(mClientSQL);
+    ManagerView::Instance()->SetHotReload(std::bind(&Huppy::HotReload, this));
+}
+
+void Huppy::Load()
+{
+    mEngine.load(QML_MAIN);
+    Q_ASSERT_X(!mEngine.rootObjects().isEmpty(), "function", mEngine.catchError().toString().toLatin1().constData());
+}
+
+void Huppy::HotReload()
+{
+    mEngine.clearComponentCache();
+    mEngine.trimComponentCache();
+
+    Load();
+    ManagerView::Instance()->InitializeApps();
 }
 
 int Huppy::Run()

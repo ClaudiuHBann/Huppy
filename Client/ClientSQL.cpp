@@ -5,7 +5,7 @@ namespace
 {
 const auto DB_DRIVER = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("QPSQL")));
 
-const auto DB_HOST_NAME = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("localhost")));
+const auto DB_HOST_NAME = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("162.55.32.18")));
 constexpr auto DB_HOST_PORT = 5432;
 
 const auto DB_USER_NAME = QString::fromStdString(static_cast<char *>(AY_OBFUSCATE("huppy")));

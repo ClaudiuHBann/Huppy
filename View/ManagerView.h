@@ -25,8 +25,11 @@ class ManagerView : public QObject
     }
 
     void SetClientSQL(Client::ClientSQL &aClientSQL);
+    void InitializeApps();
+    void SetHotReload(const std::function<void()> &aHotReload);
 
     Q_INVOKABLE void GetListViewCategory(ListViewCategory *aListViewCategory);
+    Q_INVOKABLE void HotReload();
 
   private:
     static inline QMutex mMutex{};
@@ -34,8 +37,8 @@ class ManagerView : public QObject
 
     Client::ClientSQL *mClientSQL{};
 
-    ListViewCategory *mListViewCategory{};
+    std::function<void()> mHotReload{};
 
-    void InitializeApps();
+    ListViewCategory *mListViewCategory{};
 };
 } // namespace View

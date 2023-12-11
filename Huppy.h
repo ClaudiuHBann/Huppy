@@ -12,6 +12,8 @@ class Huppy
     Huppy(int &aArgc, char **aArgv);
 
     void Initialize();
+    void HotReload();
+    void Load();
 
     int Run();
 

@@ -58,29 +58,37 @@ QVariantMap ListViewCategory::get(int row) const
 
 void ListViewCategory::append(const Category &aCategory, const App &aApp)
 {
-    beginInsertRows({}, mCategoryToApps.count(), mCategoryToApps.count());
-    mCategoryToApps[aCategory] += aApp;
-    endInsertRows();
+    // we don't need to call the events for underlying list view append items
+    // if (mCategoryToApps[aCategory].count())
+    //{
+    //    mCategoryToApps[aCategory] += aApp;
+    //    const auto row = mCategoryToApps.keys().indexOf(aCategory);
+    //    dataChanged(index(row, 0), index(row, 0), {RoleApps});
+    //}
+    // else
+    {
+        beginInsertRows({}, rowCount(), rowCount());
+        mCategoryToApps[aCategory] += aApp;
+        endInsertRows();
+    }
 }
 
 void ListViewCategory::set(int row, const Model::Category &aCategory, const Model::App &aApp)
 {
-    if (row < 0 || row >= mCategoryToApps.count())
+    if (row < 0 || row >= rowCount())
     {
         return;
     }
 
-    // TODO: is this right?
     const auto it = std::ranges::find_if(mCategoryToApps[aCategory],
                                          [&](const auto &aAppIn) { return aAppIn.Getid() == aApp.Getid(); });
     *it = aApp;
-    // TODO: update only the roles that changed
-    dataChanged(index(row, 0), index(row, 0), {RoleCategory, RoleApps});
+    dataChanged(index(row, 0), index(row, 0), {RoleApps});
 }
 
 void ListViewCategory::remove(int row, const Model::Category &aCategory, const Model::App &aApp)
 {
-    if (row < 0 || row >= mCategoryToApps.count())
+    if (row < 0 || row >= rowCount())
     {
         return;
     }

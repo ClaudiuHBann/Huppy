@@ -9,6 +9,7 @@ Window {
     flags: Qt.Window | Qt.WindowTitleHint | Qt.WindowMinimizeButtonHint | Qt.WindowMaximizeButtonHint | Qt.WindowCloseButtonHint | Qt.WindowStaysOnTopHint
     width: 640; height: 480
     title: "Huppy"
+    color: "#0E0E10"
 
     ViewCategory { anchors.fill: parent }
 

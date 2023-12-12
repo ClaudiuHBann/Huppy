@@ -5,11 +5,13 @@ import QtQuick.Controls
 import Huppy.QML
 
 ItemDelegate {
-    width: 150
+    width: 125
     height: 100
 
     contentItem: Rectangle {
         anchors.fill: parent
+        color: "#FF9966"
+        radius: 10
 
         ColumnLayout {
             anchors.fill: parent
@@ -24,10 +26,11 @@ ItemDelegate {
             
             Image {
                 source: modelData.image
-                sourceSize.width: 50
+                sourceSize.width: 60
         
                 fillMode: Image.PreserveAspectFit
                 
+                Layout.bottomMargin: 10
                 Layout.fillWidth: true
                 horizontalAlignment: Qt.AlignHCenter
             }
@@ -37,7 +40,7 @@ ItemDelegate {
             anchors.fill: parent
         
             onClicked: {
-                parent.color = "#00A550";
+                parent.color = parent.color == Qt.color("#FF9966") ? "#00A550" : "#FF9966";
             }
         }
     }

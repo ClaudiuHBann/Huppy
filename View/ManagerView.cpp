@@ -52,6 +52,21 @@ void ManagerView::GetListViewCategory(ListViewCategory *aListViewCategory)
     mListViewCategory = aListViewCategory;
 }
 
+void ManagerView::GetListViewPackage(ListViewPackage *aListViewPackage)
+{
+    mListViewPackage = aListViewPackage;
+}
+
+void ManagerView::PackageAppend(const Model::App &aApp)
+{
+    mListViewPackage->append(aApp);
+}
+
+void ManagerView::PackageRemove(const Model::App &aApp)
+{
+    mListViewPackage->remove(aApp);
+}
+
 void ManagerView::HotReload()
 {
     mHotReload();

@@ -89,7 +89,8 @@
       <PrecompiledHeaderOutputFile>$(IntDir)\Huppy.pch</PrecompiledHeaderOutputFile>
       <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_QMLMODELS_LIB;QT_QMLINTEGRATION_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
-      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -200,6 +201,7 @@
     </QtMoc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="View\ListViewPackage.cpp" />
     <ClCompile Include="Model\App.cpp" />
     <ClCompile Include="Model\Category.cpp" />
     <ClCompile Include="Client\ClientSQL.cpp" />
@@ -222,6 +224,7 @@
     <QtMoc Include="Client\ClientSQL.h" />
     <QtMoc Include="Client\FileDownloader.h" />
     <ClInclude Include="Huppy.h" />
+    <QtMoc Include="View\ListViewPackage.h" />
     <ClInclude Include="Model\IModel.h" />
     <QtMoc Include="Model\Link.h" />
     <QtMoc Include="View\ListViewApp.h" />
@@ -440,6 +443,10 @@ echo #include "pch.h"&gt;&gt;pch.h.cpp</Command>
     <QtRcc Include="release_qmake_qmake_immediate_qmlcache.qrc">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QML\DelegatePackage.qml" />
+    <None Include="QML\ViewPackage.qml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />

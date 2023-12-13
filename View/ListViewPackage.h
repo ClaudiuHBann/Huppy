@@ -6,7 +6,7 @@
 
 namespace View
 {
-class ListViewApp : public QAbstractListModel
+class ListViewPackage : public QAbstractListModel
 {
     Q_OBJECT;
 
@@ -21,7 +21,7 @@ class ListViewApp : public QAbstractListModel
     };
     Q_ENUM(AppRole)
 
-    ListViewApp(QObject *aParent = {});
+    ListViewPackage(QObject *aParent = {});
 
     int rowCount(const QModelIndex & = {}) const;
     QVariant data(const QModelIndex &index, int role = Qt::UserRole) const;
@@ -30,9 +30,9 @@ class ListViewApp : public QAbstractListModel
     Q_INVOKABLE QVariantMap get(int row) const;
     Q_INVOKABLE void append(const Model::App &aApp);
     Q_INVOKABLE void set(int row, const Model::App &aApp);
-    Q_INVOKABLE void remove(int row);
+    Q_INVOKABLE void remove(const Model::App &aApp);
 
   private:
-    QList<Model::App> mApps;
+    QList<Model::App> mPackage;
 };
 } // namespace View

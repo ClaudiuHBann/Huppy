@@ -6,14 +6,14 @@ import Huppy.QML
 ListView {
     boundsBehavior: Flickable.StopAtBounds
 
-    model: ListViewCategory {
-        id: listViewCategory
+    model: ListViewPackage {
+        id: listViewPackage
 
         Component.onCompleted: {
-            ManagerView.GetListViewCategory(listViewCategory);
+            ManagerView.GetListViewPackage(listViewPackage);
         }
     }
-    
-    delegate: DelegateCategory {}
+
+    delegate: DelegatePackage {}
     ScrollBar.vertical: ScrollBar {}
 }

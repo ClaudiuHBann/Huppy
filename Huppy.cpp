@@ -3,7 +3,7 @@
 
 #include "View/ListViewApp.h"
 #include "View/ListViewCategory.h"
-
+#include "View/ListViewPackage.h"
 #include "View/ManagerView.h"
 
 #define QML_REGISTER_TYPE(type) qmlRegisterType<type>(QML_HUPPY_URI, 1, 0, #type);
@@ -29,6 +29,7 @@ Huppy::Huppy(int &aArgc, char **aArgv)
 void Huppy::Initialize()
 {
     QML_REGISTER_TYPE(ListViewApp);
+    QML_REGISTER_TYPE(ListViewPackage);
     QML_REGISTER_TYPE(ListViewCategory);
 
     QML_REGISTER_TYPE_SINGLETON(ManagerView);

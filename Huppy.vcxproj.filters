@@ -82,6 +82,9 @@
     <ClCompile Include="Model\Types.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="View\ListViewPackage.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Model\App.h">
@@ -129,6 +132,9 @@
     <CustomBuild Include="pch.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <QtMoc Include="View\ListViewPackage.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="debug\QML_DelegateApp_qml.cpp">
@@ -205,5 +211,9 @@
     <QtRcc Include="release_qmake_qmake_immediate_qmlcache.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QML\DelegatePackage.qml" />
+    <None Include="QML\ViewPackage.qml" />
   </ItemGroup>
 </Project>

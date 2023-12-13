@@ -15,6 +15,7 @@ HEADERS += pch.h \
 \
            View\ManagerView.h \
            View\ListViewApp.h \
+           View\ListViewPackage.h \
            View\ListViewCategory.h \
 \
            Utility\Magic.h \
@@ -35,6 +36,7 @@ SOURCES += Main.cpp \
 \
            View\ManagerView.cpp \
            View\ListViewApp.cpp \
+           View\ListViewPackage.cpp \
            View\ListViewCategory.cpp \
 \
            Utility\Magic.cpp \
@@ -49,8 +51,10 @@ SOURCES += Main.cpp \
 
 RESOURCES += QML\DelegateApp.qml \
              QML\DelegateCategory.qml \
+             QML\DelegateAppPackage.qml \
 \
              QML\ViewApp.qml \
              QML\ViewCategory.qml \
+             QML\ViewAppPackage.qml \
 \
              QML\Main.qml

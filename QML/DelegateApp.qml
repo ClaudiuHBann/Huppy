@@ -40,7 +40,17 @@ ItemDelegate {
             anchors.fill: parent
         
             onClicked: {
-                parent.color = parent.color == Qt.color("#FF9966") ? "#00A550" : "#FF9966";
+                checked = !checked;
+                if (checked)
+                {
+                    ManagerView.PackageAppend(modelData);
+                    parent.color = "#00A550";
+                }
+                else
+                {
+                    ManagerView.PackageRemove(modelData);
+                    parent.color = "#FF9966";
+                }
             }
         }
     }

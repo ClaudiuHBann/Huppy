@@ -81,13 +81,9 @@
 #define DEFINE_ARG_INIT(prop) , prop(a##prop)
 #define DEFINE_ARGS_INIT(...) EXPAND(PASTE(DEFINE_ARG_INIT, __VA_ARGS__))
 
-#define DEFINE_MODEL_CONSTRUCTORS(className, ...)                                                                      \
+#define DEFINE_MODEL_CONSTRUCTORS_DEFAULT(className)                                                                   \
   public:                                                                                                              \
     constexpr className() noexcept = default;                                                                          \
-                                                                                                                       \
-    className(DEFINE_ARGS(__VA_ARGS__) const bool aDummy = true) : IModel(aDummy) DEFINE_ARGS_INIT(__VA_ARGS__)        \
-    {                                                                                                                  \
-    }                                                                                                                  \
                                                                                                                        \
     className(const className &a##className) : IModel()                                                                \
     {                                                                                                                  \
@@ -97,6 +93,14 @@
     className(className &&a##className) noexcept                                                                       \
     {                                                                                                                  \
         *this = std::move(a##className);                                                                               \
+    }
+
+#define DEFINE_MODEL_CONSTRUCTORS(className, ...)                                                                      \
+    DEFINE_MODEL_CONSTRUCTORS_DEFAULT(className);                                                                      \
+                                                                                                                       \
+  public:                                                                                                              \
+    className(DEFINE_ARGS(__VA_ARGS__) const bool aDummy = true) : IModel(aDummy) DEFINE_ARGS_INIT(__VA_ARGS__)        \
+    {                                                                                                                  \
     }
 
 // arg1 = aarg1; arg2 = aarg2; ...

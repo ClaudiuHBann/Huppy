@@ -35,6 +35,9 @@ QVariant ListViewApp::data(const QModelIndex &index, int role /* = Qt::UserRole 
     case RoleProposed:
         return mApps.at(index.row()).Getproposed();
 
+    case RoleImage:
+        return mApps.at(index.row()).Getimage();
+
     default:
         return {};
     }
@@ -42,14 +45,21 @@ QVariant ListViewApp::data(const QModelIndex &index, int role /* = Qt::UserRole 
 
 QHash<int, QByteArray> ListViewApp::roleNames() const
 {
-    return {{RoleID, "id"}, {RoleCategory, "category"}, {RoleName, "name"}, {RoleProposed, "proposed"}};
+    return {{RoleID, "id"},
+            {RoleCategory, "category"},
+            {RoleName, "name"},
+            {RoleProposed, "proposed"},
+            {RoleImage, "image"}};
 }
 
 QVariantMap ListViewApp::get(int row) const
 {
     const auto app = mApps.value(row);
-    return {
-        {"id", app.Getid()}, {"category", app.Getcategory()}, {"name", app.Getname()}, {"proposed", app.Getproposed()}};
+    return {{"id", app.Getid()},
+            {"category", app.Getcategory()},
+            {"name", app.Getname()},
+            {"proposed", app.Getproposed()},
+            {"image", app.Getimage()}};
 }
 
 void ListViewApp::append(const Model::App &aApp)
